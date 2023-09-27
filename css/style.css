@@ -1,0 +1,224 @@
+body {
+    background-image: url(../img/stand-publicidad-productos-cosmeticos-exposicion-podio-madera-sobre-fondo-verde-hojas-sha.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 45em;
+    height: 30em;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    color: white;
+    text-align: center;
+
+
+
+}
+
+.master-mind-box {
+    width: 60em;
+    height: 20em;
+
+
+}
+
+#title-index {
+    font-size: 7em;
+    font-family: 'Monoton', cursive;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+#title-index:hover {
+
+    text-shadow: #FC0 1px 0 10px;
+}
+
+#made-for {
+    font-size: 1em;
+    font-family: 'Monoton', cursive;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    letter-spacing: 5px;
+
+    margin-top: 0;
+}
+
+.index-buttoms {
+    width: 45em;
+    height: 10em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+
+}
+
+#play {
+    height: 1.5em;
+    width: 5em;
+    border: 0.2em double white;
+    color: white;
+    font-size: 4em;
+    font-family: 'Monoton', cursive;
+    background-image: url(../img/Wood-Texture.jpg);
+    box-shadow: 5px 5px 41px 0px rgba(255, 255, 255, 0.64)
+}
+
+#play:hover {
+    text-shadow: #FC0 1px 0 10px;
+    box-shadow: #FC0 1px 0 10px;
+    border: 0.2em double #FC0;
+    cursor: pointer;
+}
+
+#play:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+#rules {
+    height: 1.5em;
+    width: 5em;
+    border: 0.2em double white;
+    color: white;
+    font-size: 4em;
+    font-family: 'Monoton', cursive;
+    background-image: url(../img/Wood-Texture.jpg);
+    box-shadow: 5px 5px 41px 0px rgba(255, 255, 255, 0.64);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#rules:hover {
+    text-shadow: #FC0 1px 0 10px;
+    box-shadow: #FC0 1px 0 10px;
+    border: 0.2em double #FC0;
+    cursor: pointer;
+}
+
+#rules:active {
+
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+/* level board */
+
+#containLevelBody {
+    overflow: hidden;
+    height: 50em;
+    width: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.level-board {
+    height: 55em;
+    width: 40em;
+
+    background-image: url(../img/wood-board.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+
+    flex-direction: column;
+    gap: 4.5em;
+
+    position: relative;
+
+
+}
+
+
+.levels {
+    width: 5em;
+    height: 1em;
+    position: relative;
+    top: -10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Monoton', cursive;
+    font-size: 5em;
+}
+
+/* poner los @media */
+
+.levels:hover {
+    text-shadow: #FC0 1px 0 10px;
+    cursor: pointer;
+    transform: translate(4px, 4px);
+}
+
+.levels:active {
+    transform: translate(8px, 8px);
+}
+
+.buttom-back-home {
+    height: 2em;
+    width: 4em;
+    border: 0.1em double rgb(255, 245, 245);
+    position: absolute;
+    top: 18em;
+    background-color: rgb(165, 98, 55);
+
+    font-family: 'Monoton', cursive;
+    font-size: 2.5em;
+    border-radius: 30%;
+
+    /* padding: 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttom-back-home:hover {
+    text-shadow: #FC0 1px 0 10px;
+    box-shadow: #FC0 1px 0 10px;
+    border: 0.2em double #FC0;
+    cursor: pointer;
+}
+
+.buttom-back-home:active {
+
+    transform: translate(4px, 4px);
+    box-shadow: none;
+
+}
