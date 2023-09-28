@@ -441,7 +441,7 @@ a {
     border: 0.2em solid rgb(156, 127, 80); 
     position: absolute;
     top: 270px;
-    background-color: rgb(165, 98, 55); 
+    background-image:url(../img/Wood-Texture.jpg); 
     font-family: 'Monoton', cursive;
     font-size: 2.1em;
     border-radius: 30%;
