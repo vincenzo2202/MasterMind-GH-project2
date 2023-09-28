@@ -248,7 +248,7 @@ flex-direction: column;
 }
 
 .rules-board{
-    width: 45em;
+    width: 48em;
     height: 35em;
      
     background-image: url(../img/rules-wood-board.png);
@@ -265,7 +265,21 @@ flex-direction: column;
     margin-left: 10px;
     padding-left: 10px;
     color: rgb(255, 255, 255);
-    width: 30em;
+    width: 32em;
     height: 22em; 
-    font-size: 18px;
+    font-size: 17px;
+    font-family: 'Martian Mono', monospace;
+
+
+    position: absolute;
+    top: 19em;
+ 
 }
+
+.game-rules{
+display: flex;
+justify-content: center;
+
+}
+
+ 
