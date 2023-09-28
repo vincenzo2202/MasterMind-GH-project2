@@ -227,7 +227,7 @@ a {
 
 /* Rules  */
 
-.title-rules{
+.title-rules {
     font-size: 4em;
     font-family: 'Monoton', cursive;
     margin-bottom: 0;
@@ -239,7 +239,7 @@ a {
 
 }
 
-.title-by{
+.title-by {
     font-size: 1em;
     font-family: 'Monoton', cursive;
     margin-bottom: 0;
@@ -251,9 +251,9 @@ a {
 
 
 #rulesContainer {
-   
+
     height: 15em;
-    width:15em;
+    width: 15em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -262,7 +262,7 @@ a {
 
 .master-mind-rules-box {
     width: 30em;
-    color: white; 
+    color: white;
 }
 
 .rules-box {
@@ -271,7 +271,7 @@ a {
     width: 38em;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     padding: 0;
 }
 
@@ -296,23 +296,19 @@ a {
     width: 32em;
     height: 22em;
     font-size: 13px;
-    font-family: 'Martian Mono', monospace;
-
-
+    font-family: 'Martian Mono', monospace; 
     position: absolute;
-    top: 15em;
-
+    top: 15em; 
 }
 
 .game-rules {
     display: flex;
-    justify-content: center;
-
+    justify-content: center;            
 }
 
 /* buttom rules */
 
-.rules-buttoms { 
+.rules-buttoms {
     width: 100vw;
     height: 10em;
     display: flex;
@@ -322,8 +318,7 @@ a {
     text-align: center;
 }
 
-.play-rules {
-
+.play-rules { 
     height: 1.5em;
     width: 4em;
 
@@ -373,50 +368,99 @@ a {
 
 /* User Name input */
 
-.contain-user-input{
-    border: 0.2em solid red;
+.contain-user-input {
     width: 100vw;
-    height: 40em;
+    height: 25em;
 
     display: flex;
     justify-content: center;
     align-self: center;
 
     position: relative;
-
 }
 
-.input-box{
-    height: 30em;
-    width: 50em;
+.input-box {
+    height: 18em;
+    width: 35em;
     border: 0.6em solid rgb(156, 127, 80);
     background-image: url(../img/wood-texture-2.avif);
-    border-radius: 15%; 
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
-.x-back{
-    height: 6em;
+.input-box-text {
+
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-username {
+    font-size: 4em;
+    font-family: 'Monoton', cursive;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;  
+}
+
+.nickname {
+    color: white;
+    text-align: center;
+    height: 1.5em;
+    font-size: 3em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: 'Monoton', cursive;
+}
+
+.input {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: rgb(156, 127, 80);
     width: 6em;
-    border: 0.6em solid rgb(118, 96, 60);
-    border-radius: 50%;
-    background-image: url(../img/wood-texture-2.avif);
-
-    position: relative;
-    top: -1em;
-    left: 46em; 
-    box-shadow: -5px 5px 2px 2px rgb(87, 59, 37);
-     
+    font-size: 4em;
+    border-radius: 56px 56px 56px 56px;
+    padding-left: 15px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-.x-text{
-    height: 6em;
-    width:6em;
-    font-size: 5em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:  rgb(118, 96, 60);
-    position: absolute;
-    left: 0.25em;
-    text-shadow: -3px -3px 0px rgb(94, 76, 47);
-    
 
+
+.buttom-back-home-username {
+    height: 2em;
+    width: 3em;
+    border: 0.2em solid rgb(156, 127, 80); 
+    position: absolute;
+    top: 270px;
+    background-color: rgb(165, 98, 55); 
+    font-family: 'Monoton', cursive;
+    font-size: 2.1em;
+    border-radius: 30%;
+    padding-left: 20px;
+    padding-right: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttom-back-home-username:hover {
+    text-shadow: #FC0 1px 0 10px;
+    box-shadow: #FC0 1px 0 10px;
+    border: 0.2em double #FC0;
+    cursor: pointer;
+}
+
+.buttom-back-home-username:active { 
+    transform: translate(4px, 4px);
+    box-shadow: none; 
 }
