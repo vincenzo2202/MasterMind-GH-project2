@@ -128,18 +128,18 @@ a {
 
 #containLevelBody {
     overflow: hidden;
-    height: 50em;
-    width: 50em;
+    height: 40em;
+    width: 40em;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     margin: 0;
     padding: 0;
 }
 
 .level-board {
-    height: 55em;
+    height: 35em;
     width: 40em;
 
     background-image: url(../img/wood-board.png);
@@ -154,7 +154,7 @@ a {
     background-position: center;
 
     flex-direction: column;
-    gap: 4.5em;
+    gap: 3.5em;
 
     position: relative;
 
@@ -193,7 +193,7 @@ a {
     width: 4em;
     border: 0.1em double rgb(255, 245, 245);
     position: absolute;
-    top: 18em;
+    top: 550px;
     background-color: rgb(165, 98, 55);
 
     font-family: 'Monoton', cursive;
