@@ -227,32 +227,58 @@ a {
 
 /* Rules  */
 
+.title-rules{
+    font-size: 4em;
+    font-family: 'Monoton', cursive;
+    margin-bottom: 0;
+    padding-bottom: 5px;
 
-#rulesContainer{
-height: 45em;
-width: 60em; 
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-}
-
-.master-mind-rules-box{
-    color: white;
-}
-
-.rules-box{
-    height: 35em;
-    width: 60em; 
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
-.rules-board{
-    width: 48em;
-    height: 35em;
-     
+.title-by{
+    font-size: 1em;
+    font-family: 'Monoton', cursive;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    text-align: end;
+
+}
+
+
+
+#rulesContainer {
+   
+    height: 15em;
+    width:15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.master-mind-rules-box {
+    width: 30em;
+    color: white; 
+}
+
+.rules-box {
+    border: 0.1;
+    height: 29em;
+    width: 38em;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 0;
+}
+
+.rules-board {
+    width: 37em;
+    height: 37em;
+
     background-image: url(../img/rules-wood-board.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -263,59 +289,59 @@ flex-direction: column;
     align-items: center;
 }
 
-.rules-text{
+.rules-text {
     margin-left: 10px;
     padding-left: 10px;
     color: rgb(255, 255, 255);
     width: 32em;
-    height: 22em; 
-    font-size: 17px;
+    height: 22em;
+    font-size: 13px;
     font-family: 'Martian Mono', monospace;
 
 
     position: absolute;
     top: 15em;
- 
-}
-
-.game-rules{
-display: flex;
-justify-content: center;
 
 }
 
-.rules-buttoms{
-    
+.game-rules {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* buttom rules */
+
+.rules-buttoms { 
     width: 100vw;
     height: 10em;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 15em;
+    align-items: flex-end;
+    gap: 10em;
     text-align: center;
 }
 
-.play-rules{
-     
+.play-rules {
+
     height: 1.5em;
     width: 4em;
 
     border: 0.2em double white;
     color: white;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Monoton', cursive;
     background-image: url(../img/Wood-Texture.jpg);
     box-shadow: 5px 5px 41px 0px rgba(255, 255, 255, 0.64)
-
 }
 
-.home-rules{
+.home-rules {
     height: 1.5em;
     width: 4em;
 
     border: 0.2em double white;
     color: white;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Monoton', cursive;
     background-image: url(../img/Wood-Texture.jpg);
     box-shadow: 5px 5px 41px 0px rgba(255, 255, 255, 0.64)
@@ -327,6 +353,7 @@ justify-content: center;
     border: 0.2em double #FC0;
     cursor: pointer;
 }
+
 .home-rules:hover {
     text-shadow: #FC0 1px 0 10px;
     box-shadow: #FC0 1px 0 10px;
@@ -338,7 +365,58 @@ justify-content: center;
     transform: translate(4px, 4px);
     box-shadow: none;
 }
+
 .home-rules:active {
     transform: translate(4px, 4px);
     box-shadow: none;
+}
+
+/* User Name input */
+
+.contain-user-input{
+    border: 0.2em solid red;
+    width: 100vw;
+    height: 40em;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    position: relative;
+
+}
+
+.input-box{
+    height: 30em;
+    width: 50em;
+    border: 0.6em solid rgb(156, 127, 80);
+    background-image: url(../img/wood-texture-2.avif);
+    border-radius: 15%; 
+}
+
+.x-back{
+    height: 6em;
+    width: 6em;
+    border: 0.6em solid rgb(118, 96, 60);
+    border-radius: 50%;
+    background-image: url(../img/wood-texture-2.avif);
+
+    position: relative;
+    top: -1em;
+    left: 46em; 
+    box-shadow: -5px 5px 2px 2px rgb(87, 59, 37);
+     
+}
+
+.x-text{
+    height: 6em;
+    width:6em;
+    font-size: 5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:  rgb(118, 96, 60);
+    position: absolute;
+    left: 0.25em;
+    text-shadow: -3px -3px 0px rgb(94, 76, 47);
+    
+
 }
