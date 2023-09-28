@@ -222,3 +222,50 @@ a {
     box-shadow: none;
 
 }
+
+/* Rules  */
+
+
+#rulesContainer{
+height: 45em;
+width: 60em; 
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.master-mind-rules-box{
+    color: white;
+}
+
+.rules-box{
+    height: 35em;
+    width: 60em; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules-board{
+    width: 45em;
+    height: 35em;
+     
+    background-image: url(../img/rules-wood-board.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules-text{
+    margin-left: 10px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    width: 30em;
+    height: 22em; 
+    font-size: 18px;
+}
