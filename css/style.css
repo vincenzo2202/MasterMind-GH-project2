@@ -10,6 +10,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    flex-direction: column;
 }
 
 #container {
@@ -272,7 +274,7 @@ flex-direction: column;
 
 
     position: absolute;
-    top: 19em;
+    top: 15em;
  
 }
 
@@ -282,4 +284,61 @@ justify-content: center;
 
 }
 
- 
+.rules-buttoms{
+    
+    width: 100vw;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15em;
+    text-align: center;
+}
+
+.play-rules{
+     
+    height: 1.5em;
+    width: 4em;
+
+    border: 0.2em double white;
+    color: white;
+    font-size: 3em;
+    font-family: 'Monoton', cursive;
+    background-image: url(../img/Wood-Texture.jpg);
+    box-shadow: 5px 5px 41px 0px rgba(255, 255, 255, 0.64)
+
+}
+
+.home-rules{
+    height: 1.5em;
+    width: 4em;
+
+    border: 0.2em double white;
+    color: white;
+    font-size: 3em;
+    font-family: 'Monoton', cursive;
+    background-image: url(../img/Wood-Texture.jpg);
+    box-shadow: 5px 5px 41px 0px rgba(255, 255, 255, 0.64)
+}
+
+.play-rules:hover {
+    text-shadow: #FC0 1px 0 10px;
+    box-shadow: #FC0 1px 0 10px;
+    border: 0.2em double #FC0;
+    cursor: pointer;
+}
+.home-rules:hover {
+    text-shadow: #FC0 1px 0 10px;
+    box-shadow: #FC0 1px 0 10px;
+    border: 0.2em double #FC0;
+    cursor: pointer;
+}
+
+.play-rules:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+.home-rules:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
