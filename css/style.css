@@ -108,7 +108,7 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+
 }
 
 #rules:hover {
@@ -127,6 +127,7 @@ a {
 /* level board */
 
 #containLevelBody {
+    border: 0.2em solid red;
     overflow: hidden;
     height: 40em;
     width: 40em;
@@ -174,6 +175,7 @@ a {
 
     font-family: 'Monoton', cursive;
     font-size: 5em;
+    color: black;
 }
 
 /* poner los @media */
@@ -296,14 +298,14 @@ a {
     width: 32em;
     height: 22em;
     font-size: 13px;
-    font-family: 'Martian Mono', monospace; 
+    font-family: 'Martian Mono', monospace;
     position: absolute;
-    top: 15em; 
+    top: 15em;
 }
 
 .game-rules {
     display: flex;
-    justify-content: center;            
+    justify-content: center;
 }
 
 /* buttom rules */
@@ -318,7 +320,7 @@ a {
     text-align: center;
 }
 
-.play-rules { 
+.play-rules {
     height: 1.5em;
     width: 4em;
 
@@ -356,12 +358,12 @@ a {
     cursor: pointer;
 }
 
-.play-rules:active {
+.play-rules:active{
     transform: translate(4px, 4px);
     box-shadow: none;
 }
 
-.home-rules:active {
+.home-rules:active{
     transform: translate(4px, 4px);
     box-shadow: none;
 }
@@ -408,7 +410,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;  
+    color: white;
 }
 
 .nickname {
@@ -438,15 +440,15 @@ a {
 .buttom-back-home-username {
     height: 2em;
     width: 3em;
-    border: 0.2em solid rgb(156, 127, 80); 
+    border: 0.2em solid rgb(156, 127, 80);
     position: absolute;
     top: 270px;
-    background-image:url(../img/Wood-Texture.jpg); 
+    background-image: url(../img/Wood-Texture.jpg);
     font-family: 'Monoton', cursive;
     font-size: 2.1em;
     border-radius: 30%;
     padding-left: 20px;
-    padding-right: 20px; 
+    padding-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -460,7 +462,181 @@ a {
     cursor: pointer;
 }
 
-.buttom-back-home-username:active { 
+.buttom-back-home-username:active {
     transform: translate(4px, 4px);
-    box-shadow: none; 
+    box-shadow: none;
+}
+
+/* Esto es el tablero */
+
+#containboardBody {
+    border: 0.2em solid red;
+    height: 40em;
+    width: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+
+
+}
+
+
+.color-board {
+    border: 0.3em solid rgb(147, 99, 28);
+    height: 18em;
+    width: 45em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(../img/wood-texture-2.avif);
+    border-radius: 56px 56px 56px 56px;
+    position: static;
+
+
+
+}
+
+.title-color {
+    height: 3em;
+    width: 26em;
+    border: 0.5em solid rgb(147, 99, 28);
+    border-radius: 56px 56px 56px 56px;
+    position: relative;
+    top: 2.5em;
+    background-color: rgb(251, 211, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title-color-text {
+    font-size: 1.5em;
+    font-family: 'Black Ops One', cursive;
+
+}
+
+.colors {
+    height: 7em;
+    width: 7em;
+    border: 0.5em solid rgb(147, 99, 28);
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+
+
+
+}
+
+.box-next {
+    height: 4em;
+    width: 10em;
+    border: 0.5em solid rgb(147, 99, 28);
+    border-radius: 56px 56px 56px 56px;
+    position: relative;
+    top: -2.5em;
+    background-color: rgb(251, 211, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box-next:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+#collapseBox {
+    display: flex;
+    height: 0;
+    width: 30em;
+    background-color: rgb(181, 174, 164);
+
+    border-radius: 56px;
+    position: absolute;
+    top: 27em;
+    z-index: 100;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    padding-left: 2em;
+
+    overflow: hidden;
+    transition-property: height, width;
+    transition-duration: 0.5s;
+    justify-content: space-evenly;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+#collapseBox.expanded {
+    height: 10em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border: 0.5em solid rgb(147, 99, 28);
+    justify-content: space-evenly;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: -1em;
+
+}
+
+
+.choice-color {
+    height: 3em;
+    width: 3em;
+    border: 0.2em solid rgb(0, 0, 0);
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+#c1 {
+    background-color: rgb(255, 0, 0);
+}
+
+#c2 {
+    background-color: rgb(0, 0, 255);
+}
+
+#c3 {
+    background-color: rgb(0, 255, 55);
+}
+
+#c4 {
+    background-color: rgb(212, 0, 255);
+}
+
+#c5 {
+    background-color: rgb(0, 247, 255);
+}
+
+#c6 {
+    background-color: rgb(255, 255, 0);
+}
+
+#c7 {
+    background-color: rgb(0, 0, 0);
+}
+
+#c8 {
+    background-color: rgb(102, 0, 255);
+}
+
+#c9 {
+    background-color: rgb(94, 94, 94);
+}
+
+#c10 {
+    background-color: rgb(248, 117, 221);
 }
