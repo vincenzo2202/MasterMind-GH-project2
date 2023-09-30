@@ -686,14 +686,13 @@ a {
 
 .validation-box {
     height: 3.5em;
-    width: 2fr 3fr;
+    width: 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.square-validation {
-
+.square-validation { 
     height: 3em;
     width: 3em;
     border: 0.05em solid rgb(0, 0, 0);
@@ -777,12 +776,13 @@ a {
 
 #checkbuttom {
     height: 2.5em;
-    width: 5.5em;
+    width: 7em;
     background-color: rgb(0, 207, 4);
     border: 0.5em double green;
     margin-bottom: 0;
     position: relative;
-    top: -5.5em;
+    top: 1em;
+    left: 0em;
     border-radius: 25px 25px 25px 25px;
     display: flex;
     justify-content: center;
@@ -818,6 +818,27 @@ a {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 37em;
+    height: 25em;
     width: 35em;
+}
+
+.buttom-back-game{
+    background-image: url(../img/arrow.png);
+    height: 6em;
+    width: 8em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:relative;
+    rotate: 180deg;
+    top: -1em;
+    left: 1em;
+    cursor: pointer;
+
+} 
+
+.buttom-back-game:active {
+    transform: translate(-4px, -4px);
+    box-shadow: #FC0 1px 0 10px;
+    box-shadow: none;
 }
