@@ -358,12 +358,12 @@ a {
     cursor: pointer;
 }
 
-.play-rules:active{
+.play-rules:active {
     transform: translate(4px, 4px);
     box-shadow: none;
 }
 
-.home-rules:active{
+.home-rules:active {
     transform: translate(4px, 4px);
     box-shadow: none;
 }
@@ -469,8 +469,7 @@ a {
 
 /* Esto es el tablero */
 
-#containboardBody {
-    border: 0.2em solid red;
+#containboardBody { 
     height: 40em;
     width: 50em;
     display: flex;
@@ -510,14 +509,12 @@ a {
     background-color: rgb(251, 211, 151);
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    align-items: center; 
 }
 
 .title-color-text {
     font-size: 1.5em;
-    font-family: 'Black Ops One', cursive;
-
+    font-family: 'Black Ops One', cursive; 
 }
 
 .colors {
@@ -526,10 +523,7 @@ a {
     border: 0.5em solid rgb(147, 99, 28);
     border-radius: 50%;
     background-color: white;
-    cursor: pointer;
-
-
-
+    cursor: pointer; 
 }
 
 .box-next {
@@ -572,8 +566,7 @@ a {
     justify-content: space-evenly;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
 }
 
 #collapseBox.expanded {
@@ -587,8 +580,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding-top: 2em;
     padding-left: 2em;
-    padding-right: -1em;
-
+    padding-right: -1em; 
 }
 
 
@@ -597,8 +589,7 @@ a {
     width: 3em;
     border: 0.2em solid rgb(0, 0, 0);
     border-radius: 50%;
-    cursor: pointer;
-
+    cursor: pointer; 
 }
 
 #c1 {
@@ -639,4 +630,26 @@ a {
 
 #c10 {
     background-color: rgb(248, 117, 221);
+}
+
+/*  */
+
+.arrowback{
+    width: 6em;
+    height: 4em ;
+    background-image: url(../img/arrow.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:relative;
+    top: -33em;
+    left:-21em;
+    rotate: 180deg;
+    cursor: pointer;
+}
+
+.arrowback:active {
+    transform: translate(-4px, -4px);
+    box-shadow: #FC0 1px 0 10px; 
+    box-shadow: none;
 }
