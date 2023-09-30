@@ -469,7 +469,7 @@ a {
 
 /* Esto es el tablero */
 
-#containboardBody { 
+#containboardBody {
     height: 40em;
     width: 50em;
     display: flex;
@@ -509,12 +509,12 @@ a {
     background-color: rgb(251, 211, 151);
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .title-color-text {
     font-size: 1.5em;
-    font-family: 'Black Ops One', cursive; 
+    font-family: 'Black Ops One', cursive;
 }
 
 .colors {
@@ -523,7 +523,7 @@ a {
     border: 0.5em solid rgb(147, 99, 28);
     border-radius: 50%;
     background-color: white;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .box-next {
@@ -566,7 +566,7 @@ a {
     justify-content: space-evenly;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #collapseBox.expanded {
@@ -580,7 +580,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding-top: 2em;
     padding-left: 2em;
-    padding-right: -1em; 
+    padding-right: -1em;
 }
 
 
@@ -589,7 +589,7 @@ a {
     width: 3em;
     border: 0.2em solid rgb(0, 0, 0);
     border-radius: 50%;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 #c1 {
@@ -634,76 +634,190 @@ a {
 
 /*  */
 
-.arrowback{
+.arrowback {
     width: 6em;
-    height: 4em ;
+    height: 4em;
     background-image: url(../img/arrow.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    position:relative;
+    position: relative;
     top: -33em;
-    left:-21em;
+    left: -21em;
     rotate: 180deg;
     cursor: pointer;
 }
 
 .arrowback:active {
     transform: translate(-4px, -4px);
-    box-shadow: #FC0 1px 0 10px; 
+    box-shadow: #FC0 1px 0 10px;
     box-shadow: none;
 }
 
 /* Esto es el mastermind */
-#mastermind-board{
+#mastermind-board {
     height: 40em;
-    width: 65em;
+    width: 80em;
     border: 0.5em inset rgb(255, 150, 75);
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 4fr 1fr 1.2fr 2.5fr;
     margin-top: 0;
     background-image: url(../img/wood-texture-2.avif);
+    padding-right: 10px;
+    padding-left: 10px;
 
 }
 
-.column-box{
-    
-    width: 2fr 1fr 2fr;
+.column-box {
+
+    width: 4fr 1.5fr 1.2fr 2fr;
     height: 37em;
-    border: 0.2em solid rgb(191, 255, 0);
-     
-    
 }
 
-.column-mid-box{
+.column-mid-box {
     height: 3em;
-    width: auto; 
+    width: auto;
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    
-    margin-top: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 12px;
 }
 
-.validation-box{
-    height:3em;
-    width:2fr 3fr;
-    border: 0.2em solid red;
+.validation-box {
+    height: 3.5em;
+    width: 2fr 3fr;
+    display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
-.colum-right-box{
-    margin-top: 9px;
+.square-validation {
+
+    height: 3em;
+    width: 3em;
+    border: 0.05em solid rgb(0, 0, 0);
+    background-color: rgb(245, 193, 131);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0px 0px 5px 2px black;
+}
+
+#circleCheck {
+    height: 1em;
+    width: 1em;
+    border: 0.1em solid black;
+    background-color: gray;
+    border-radius: 50%;
+    align-items: center;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+
+
+.colum-right-box {
+    width: 20em;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.circle-mastermind-game {
+    height: 3.3em;
+    width: 100%;
+    border: 0.1em solid rgb(0, 0, 0);
+    background-color: rgb(222, 160, 90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    border-radius: 6px 6px 6px 6px;
+    margin-left: 30px;
+}
+
+#circleMastermind {
+    height: 2.5em;
+    width: 2.5em;
+    border: 0.2em solid black;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px rgb(222, 160, 90);
+}
+
+.number {
+    width: 1em;
+    height: 1em;
+    padding: 0;
+    margin: 0;
+    margin-right: -15px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2em;
+    text-align: start;
+    justify-content: flex-end;
+}
+
+.set-vertical-box {
+    background-color: gray;
+    width: 5.5em;
+    height: 30em;
+    margin-top: 3em;
+    margin-left: 1em;
+    border: 0.5em solid rgb(54, 54, 54);
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.circle-mastermind-game{
-    border: 0.2em solid red;
-    width:  100%;
-    height: 3em;
+#checkbuttom {
+    height: 2.5em;
+    width: 5.5em;
+    background-color: rgb(0, 207, 4);
+    border: 0.5em double green;
+    margin-bottom: 0;
+    position: relative;
+    top: -5.5em;
+    border-radius: 25px 25px 25px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+#checkbuttom:hover {
+    text-shadow: #FC0 1px 0 10px;
+    box-shadow: #FC0 1px 0 10px;
+    border: 0.5em double #FC0;
+    cursor: pointer;
+}
+
+#checkbuttom:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+#selected-colors {
+    height: 4.5em;
+    width: 4.5em;
+    border: 0.2em solid black;
+    border-radius: 50%;
+    background-color: white;
+
+}
+
+.logo-mastermind {
+    background-image: url(../img/board-Mastermind-logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 37em;
+    width: 35em;
 }
