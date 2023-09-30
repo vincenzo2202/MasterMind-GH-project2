@@ -653,3 +653,57 @@ a {
     box-shadow: #FC0 1px 0 10px; 
     box-shadow: none;
 }
+
+/* Esto es el mastermind */
+#mastermind-board{
+    height: 40em;
+    width: 65em;
+    border: 0.5em inset rgb(255, 150, 75);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr 1fr 2fr;
+    margin-top: 0;
+    background-image: url(../img/wood-texture-2.avif);
+
+}
+
+.column-box{
+    
+    width: 2fr 1fr 2fr;
+    height: 37em;
+    border: 0.2em solid rgb(191, 255, 0);
+     
+    
+}
+
+.column-mid-box{
+    height: 3em;
+    width: auto; 
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    
+    margin-top: 10px;
+}
+
+.validation-box{
+    height:3em;
+    width:2fr 3fr;
+    border: 0.2em solid red;
+    justify-content: center;
+    align-items: center; 
+}
+
+.colum-right-box{
+    margin-top: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
+}
+
+.circle-mastermind-game{
+    border: 0.2em solid red;
+    width:  100%;
+    height: 3em;
+}
