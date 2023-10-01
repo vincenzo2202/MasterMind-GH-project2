@@ -14,12 +14,12 @@ let lastSelectedColor = null;
 // desplegable 
 color1.addEventListener('click', () => {
     collapseBox.classList.toggle('expanded');
-    lastSelectedColor = color1;
+    lastSelectedColor = color1; 
 });
 
 color2.addEventListener('click', () => {
     collapseBox.classList.toggle('expanded');
-    lastSelectedColor = color2;
+    lastSelectedColor = color2; 
 });
 
 color3.addEventListener('click', () => {
@@ -32,9 +32,11 @@ color4.addEventListener('click', () => {
     lastSelectedColor = color4;
 });
 
-
+// es la funcion  para aplicar color al elemento y guardarlo en el local storage
 function applyColorToElement(element, color) {
-    element.style.backgroundColor = color;
+    element.style.backgroundColor = color;  
+   lastSelectedColor = element; 
+   localStorage.setItem(element.id, color); 
 }
 
 // Agregar eventos a los elementos con la clase 'choice-color'
@@ -43,7 +45,10 @@ for (let i = 0; i < colorSelected.length; i++) {
         if (lastSelectedColor) {
             const selectedColor = getComputedStyle(colorSelected[i]).backgroundColor;
             applyColorToElement(lastSelectedColor, selectedColor);
-        }
+            
+        }   
     });
 }
+ 
+ 
  
