@@ -666,18 +666,19 @@ a {
 }
 
 /* Esto es el mastermind */
-#mastermind-board {
-    height: 40em;
+#mastermindBoard {
+    height: 42em;
     width: 80em;
     border: 0.5em inset rgb(255, 150, 75);
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: 4fr 1fr 1.2fr 2.5fr;
-    margin-top: 0;
+    margin-top: 3em;
     background-image: url(../img/wood-texture-2.avif);
     padding-right: 10px;
     padding-left: 10px;
+    border-radius: 26px 26px 26px 26px;
 
 }
 
@@ -685,6 +686,8 @@ a {
 
     width: 4fr 1.5fr 1.2fr 2fr;
     height: 37em;
+    margin-bottom: 2em;
+    margin-top: 1em;
 }
 
 .column-mid-box {
@@ -785,6 +788,42 @@ a {
     align-items: center;
 }
 
+.home-buttom-game{
+    height: 4em ;
+    width: 4em ;
+    border: 0.5em double black;
+    background-color: rgb(120, 81, 34);
+    border-radius: 50%;
+    position: relative;
+    z-index: 100;
+    top: -7em;
+    left: -20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-buttom-game:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+ 
+.material-symbols-outlined{
+    position: absolute;
+    color: white;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+} 
+
+.level-home-buttom{
+    top:-0.4em;
+   left: -0.4em ;
+}
+
+
 #checkbuttom {
     height: 2.5em;
     width: 7em;
@@ -835,7 +874,7 @@ a {
 
 .buttom-back-game {
     background-image: url(../img/arrow.png);
-    height: 6em;
+    height:5em;
     width: 8em;
     background-position: center;
     background-repeat: no-repeat;
@@ -844,12 +883,94 @@ a {
     rotate: 180deg;
     top: -1em;
     left: 1em;
-    cursor: pointer;
-
+    cursor: pointer; 
 }
+
+.ancor-size{
+    width: 4em;
+    height: 4em;
+}
+
 
 .buttom-back-game:active {
     transform: translate(-4px, -4px);
     box-shadow: #FC0 1px 0 10px;
     box-shadow: none;
 }
+
+.rules-collapse{ 
+    position: relative;
+    top: 4.5em;
+    left: -9em; 
+    
+    cursor: pointer;
+
+}
+
+.rules-collapse:active{  
+    transform: translate( 4px,  4px);
+
+}
+
+.help-game{
+    background-color: rgb(129, 93, 39);
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+/* #collapseRules{
+    display: flex;
+    height: 0;
+    width: 10em;
+
+
+}
+
+#collapseRules.expanded{
+    height: 10em;
+    width: 10em;
+    background-color: gray;
+    border: 0.2em solid black;
+
+} */
+
+
+#collapseRules{
+    display: flex;
+    height: 0;
+    width: 30em;
+    background-color: rgb(181, 174, 164);
+
+    border-radius: 56px;
+    position: absolute;
+    top: 6em;
+    left: 9em;
+    z-index: 100; 
+
+    overflow: hidden;
+    transition-property: height, width;
+    transition-duration: 0.5s; 
+    text-align: start;  
+    align-items: flex-start;
+}
+
+#collapseRules.expanded {
+    height: 21em; 
+    border: 0.5em solid rgb(147, 99, 28); 
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0; 
+}
+
+.rules-text-game{
+    margin-left: 10px;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    width: 32em;
+    height: 22em;
+    font-size: 13px;
+    font-family: 'Martian Mono', monospace;
+    position: absolute; 
+}
+
