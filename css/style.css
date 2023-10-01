@@ -944,8 +944,8 @@ a {
 
     border-radius: 56px;
     position: absolute;
-    top: 6em;
-    left: 9em;
+    top: 6.5em;
+    left: 10.5em;
     z-index: 100; 
 
     overflow: hidden;
@@ -957,7 +957,7 @@ a {
 
 #collapseRules.expanded {
     height: 21em; 
-    border: 0.5em solid rgb(147, 99, 28); 
+    border: 0.2em solid rgb(0, 0, 0); 
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0; 
