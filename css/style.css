@@ -127,7 +127,6 @@ a {
 /* level board */
 
 #containLevelBody {
-    border: 0.2em solid red;
     overflow: hidden;
     height: 40em;
     width: 40em;
@@ -191,41 +190,48 @@ a {
 }
 
 .buttom-back-home {
-    height: 2em;
-    width: 4em;
+    height: 1.5em;
+    width: 1.5em;
     border: 0.1em double rgb(255, 245, 245);
     position: absolute;
     top: 550px;
     background-color: rgb(165, 98, 55);
-
     font-family: 'Monoton', cursive;
     font-size: 2.5em;
-    border-radius: 30%;
-
-    /* padding: 20px; */
-    padding-left: 20px;
-    padding-right: 20px;
-
-
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 
 }
 
-.buttom-back-home:hover {
-    text-shadow: #FC0 1px 0 10px;
-    box-shadow: #FC0 1px 0 10px;
-    border: 0.2em double #FC0;
-    cursor: pointer;
+.text-color-black {
+    color: black;
 }
+
+.text-color-white {
+    color: rgb(255, 255, 255);
+}
+
+
 
 .buttom-back-home:active {
-
     transform: translate(4px, 4px);
     box-shadow: none;
-
 }
+
+
+.material-symbols-outlined {
+    padding: 0.5em;
+    font-size: 50px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
 
 /* Rules  */
 
@@ -452,8 +458,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+
+.play-buttom {
+    color: white;
+}
+
+
 
 .buttom-back-home-username:hover {
     text-shadow: #FC0 1px 0 10px;
@@ -692,7 +703,7 @@ a {
     align-items: center;
 }
 
-.square-validation { 
+.square-validation {
     height: 3em;
     width: 3em;
     border: 0.05em solid rgb(0, 0, 0);
@@ -822,20 +833,20 @@ a {
     width: 35em;
 }
 
-.buttom-back-game{
+.buttom-back-game {
     background-image: url(../img/arrow.png);
     height: 6em;
     width: 8em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    position:relative;
+    position: relative;
     rotate: 180deg;
     top: -1em;
     left: 1em;
     cursor: pointer;
 
-} 
+}
 
 .buttom-back-game:active {
     transform: translate(-4px, -4px);
