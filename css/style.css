@@ -854,7 +854,7 @@ a {
     box-shadow: none;
 }
 
-#selected-colors {
+.selected-colors {
     height: 4.5em;
     width: 4.5em;
     border: 0.2em solid black;
