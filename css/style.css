@@ -754,7 +754,7 @@ a {
     margin-left: 30px;
 }
 
-#circleMastermind {
+.circleMastermind {
     height: 2.5em;
     width: 2.5em;
     border: 0.2em solid black;
