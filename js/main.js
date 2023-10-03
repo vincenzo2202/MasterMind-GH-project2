@@ -77,17 +77,29 @@ function applyColorToDestinyElements(row) {
 }
 
 // ---- Se ejecuta la funcion para todas las columnas
-applyColorToDestinyElements('.circleMastermind.row1') 
-applyColorToDestinyElements('.circleMastermind.row2') 
-applyColorToDestinyElements('.circleMastermind.row3') 
-applyColorToDestinyElements('.circleMastermind.row4') 
-applyColorToDestinyElements('.circleMastermind.row5')
-applyColorToDestinyElements('.circleMastermind.row6')
-applyColorToDestinyElements('.circleMastermind.row7')
-applyColorToDestinyElements('.circleMastermind.row8')
-applyColorToDestinyElements('.circleMastermind.row9')
-applyColorToDestinyElements('.circleMastermind.row10')
+let Check = 1;
 
+if (Check = 1){
+    applyColorToDestinyElements('.circleMastermind.row1')
+}else if (Check = 2){
+    applyColorToDestinyElements('.circleMastermind.row2') 
+}else if(Check = 3) {
+    applyColorToDestinyElements('.circleMastermind.row3')  
+}else if (Check = 4){
+    applyColorToDestinyElements('.circleMastermind.row4')
+}else if (Check = 5){
+    applyColorToDestinyElements('.circleMastermind.row5')
+} else if (Check = 6) {
+    applyColorToDestinyElements('.circleMastermind.row6')
+}else if (Check = 7) {
+    applyColorToDestinyElements('.circleMastermind.row7')
+}else if (Check = 8){
+    applyColorToDestinyElements('.circleMastermind.row8')
+}else if (Check = 9){
+    applyColorToDestinyElements('.circleMastermind.row9')
+}else if (Check = 10){
+    applyColorToDestinyElements('.circleMastermind.row10')
+}
 
 
 // ---------------- array ganador--------
