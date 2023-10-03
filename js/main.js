@@ -56,24 +56,57 @@ selected4.addEventListener('click', () => {
 
  
 
-// funcioneas para aplicar el color 
+// funcioneas para aplicar el color al row1 del juego
+ 
 
 function applyColorToElement(element, color) {
     element.style.backgroundColor = color;  
 }
 
-function applyColorToDestinyElements() {
-    const DestinyColor = document.querySelectorAll('.circleMastermind.row1'); 
-
+function applyColorToDestinyElements(row) {
+    const DestinyColor = document.querySelectorAll(row); 
+  
     DestinyColor.forEach((circle) => {
         circle.addEventListener('click', () => {
             if (lastSelectedColor) {
                 const destinationColor = getComputedStyle(circle).backgroundColor;
-                applyColorToElement(circle, lastSelectedColor);
-            }
+                applyColorToElement(circle, lastSelectedColor); 
+            } 
         });
-    });
-    
+    }); 
 }
-// ----------------
+
+// ---- Se ejecuta la funcion para todas las columnas
+applyColorToDestinyElements('.circleMastermind.row1') 
+applyColorToDestinyElements('.circleMastermind.row2') 
+applyColorToDestinyElements('.circleMastermind.row3') 
+applyColorToDestinyElements('.circleMastermind.row4') 
+applyColorToDestinyElements('.circleMastermind.row5')
+applyColorToDestinyElements('.circleMastermind.row6')
+applyColorToDestinyElements('.circleMastermind.row7')
+applyColorToDestinyElements('.circleMastermind.row8')
+applyColorToDestinyElements('.circleMastermind.row9')
+applyColorToDestinyElements('.circleMastermind.row10')
+
+
+
+// ---------------- array ganador--------
+
+let arrayKey = []
+
+for (let i = 1; i <= 4; i++) {
+    const random = Math.floor(Math.random() * 4) + 1;
+    if (random == 1) {
+        arrayKey.push(localStorage.getItem("colors1"));
+    } else if (random == 2) {
+        arrayKey.push(localStorage.getItem("colors2"));
+    } else if (random == 3) {
+        arrayKey.push(localStorage.getItem("colors3"));
+    } else {
+        arrayKey.push(localStorage.getItem("colors4"));
+    }
+} 
+
+console.log(arrayKey);
+ 
 
