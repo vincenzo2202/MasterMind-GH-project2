@@ -27,19 +27,28 @@ collapseBox.addEventListener('click', () => {
 
 
 // es la funcion  para aplicar color al elemento y guardarlo en el local storage
+
+const usedColors = {};
+
+
 function applyColorToElement(element, color) {
     element.style.backgroundColor = color;  
    lastSelectedColor = element; 
    localStorage.setItem(element.id, color); 
+    usedColors[color] = true;
 }
 
 // Agregar eventos a los elementos con la clase 'choice-color'
 for (let i = 0; i < colorSelected.length; i++) {
     colorSelected[i].addEventListener('click', () => {
         if (lastSelectedColor) {
-            const selectedColor = getComputedStyle(colorSelected[i]).backgroundColor;
-            applyColorToElement(lastSelectedColor, selectedColor);
+            const selectedColor = getComputedStyle(colorSelected[i]).backgroundColor; 
             
+            if (!usedColors[selectedColor]) {
+                applyColorToElement(lastSelectedColor, selectedColor);
+            } else {
+                alert('El color ya ha sido seleccionado anteriormente. Elige otro color.');
+            }
         }   
     });
 } 
