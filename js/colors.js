@@ -27,7 +27,7 @@ collapseBox.addEventListener('click', () => {
 
 
 // es la funcion  para aplicar color al elemento y guardarlo en el local storage
-
+ 
 const usedColors = {};
 
 

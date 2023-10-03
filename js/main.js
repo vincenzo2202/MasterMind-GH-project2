@@ -63,36 +63,17 @@ function applyColorToElement(element, color) {
 }
 
 function applyColorToDestinyElements() {
-    const DestinyColor = document.getElementsByClassName('circleMastermind'); 
+    const DestinyColor = document.querySelectorAll('.circleMastermind.row1'); 
 
-    for (let i = 0; i < DestinyColor.length; i++) { 
-        DestinyColor[i].addEventListener('click', ()=>{
-            if(lastSelectedColor){
-                const Destination = getComputedStyle()
-            } 
-        })
-        applyColorToElement(DestinyColor[i], lastSelectedColor);
-    }
+    DestinyColor.forEach((circle) => {
+        circle.addEventListener('click', () => {
+            if (lastSelectedColor) {
+                const destinationColor = getComputedStyle(circle).backgroundColor;
+                applyColorToElement(circle, lastSelectedColor);
+            }
+        });
+    });
+    
 }
+// ----------------
 
-
-//  ----------------
-
-
-// esto es solo el codigo del colors page 
-
-// for (let i = 0; i < colorSelected.length; i++) {
-//     colorSelected[i].addEventListener('click', () => {
-//         if (lastSelectedColor) {
-//             const selectedColor = getComputedStyle(colorSelected[i]).backgroundColor;
-//             applyColorToElement(lastSelectedColor, selectedColor);
-            
-//         }   
-//     });}
-
-
-//     function applyColorToElement(element, color) {
-//         element.style.backgroundColor = color;  
-//        lastSelectedColor = element; 
-//        localStorage.setItem(element.id, color); 
-//     }
