@@ -1,3 +1,21 @@
+/* @media only screen and (max-width: 990px) {
+    html {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    html {
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    html {
+        font-size: 0.33em;
+    }
+} */
+
 body {
     background-image: url(../img/stand-publicidad-productos-cosmeticos-exposicion-podio-madera-sobre-fondo-verde-hojas-sha.jpg);
     background-size: cover;
@@ -604,43 +622,43 @@ a {
 }
 
 #c1 {
-    background-color: rgb(255, 0, 0);
+    background-color: #FF0000;
 }
 
 #c2 {
-    background-color: rgb(0, 0, 255);
+    background-color:#0000FF;
 }
 
 #c3 {
-    background-color: rgb(0, 255, 55);
+    background-color: #00FF37;
 }
 
 #c4 {
-    background-color: rgb(212, 0, 255);
+    background-color: #D400FF;
 }
 
 #c5 {
-    background-color: rgb(0, 247, 255);
+    background-color: #00F7FF;
 }
 
 #c6 {
-    background-color: rgb(255, 255, 0);
+    background-color: #FFFF00;
 }
 
 #c7 {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
 }
 
 #c8 {
-    background-color: rgb(102, 0, 255);
+    background-color: #6600FF;
 }
 
 #c9 {
-    background-color: rgb(94, 94, 94);
+    background-color: #5E5E5E;
 }
 
 #c10 {
-    background-color: rgb(248, 117, 221);
+    background-color: #F875DD;
 }
 
 /*  */
@@ -788,9 +806,9 @@ a {
     align-items: center;
 }
 
-.home-buttom-game{
-    height: 4em ;
-    width: 4em ;
+.home-buttom-game {
+    height: 4em;
+    width: 4em;
     border: 0.5em double black;
     background-color: rgb(120, 81, 34);
     border-radius: 50%;
@@ -807,20 +825,20 @@ a {
     transform: translate(4px, 4px);
     box-shadow: none;
 }
- 
-.material-symbols-outlined{
+
+.material-symbols-outlined {
     position: absolute;
     color: white;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-} 
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
 
-.level-home-buttom{
-    top:-0.4em;
-   left: -0.4em ;
+.level-home-buttom {
+    top: -0.4em;
+    left: -0.4em;
 }
 
 
@@ -874,7 +892,7 @@ a {
 
 .buttom-back-game {
     background-image: url(../img/arrow.png);
-    height:5em;
+    height: 5em;
     width: 8em;
     background-position: center;
     background-repeat: no-repeat;
@@ -883,10 +901,10 @@ a {
     rotate: 180deg;
     top: -1em;
     left: 1em;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-.ancor-size{
+.ancor-size {
     width: 4em;
     height: 4em;
 }
@@ -898,21 +916,21 @@ a {
     box-shadow: none;
 }
 
-.rules-collapse{ 
+.rules-collapse {
     position: relative;
     top: 4.5em;
-    left: -9em; 
-    
+    left: -9em;
+
     cursor: pointer;
 
 }
 
-.rules-collapse:active{  
-    transform: translate( 4px,  4px);
+.rules-collapse:active {
+    transform: translate(4px, 4px);
 
 }
 
-.help-game{
+.help-game {
     background-color: rgb(129, 93, 39);
     border-radius: 50%;
     padding: 0;
@@ -936,7 +954,7 @@ a {
 } */
 
 
-#collapseRules{
+#collapseRules {
     display: flex;
     height: 0;
     width: 30em;
@@ -946,24 +964,24 @@ a {
     position: absolute;
     top: 6.5em;
     left: 10.5em;
-    z-index: 100; 
+    z-index: 100;
 
     overflow: hidden;
     transition-property: height, width;
-    transition-duration: 0.5s; 
-    text-align: start;  
+    transition-duration: 0.5s;
+    text-align: start;
     align-items: flex-start;
 }
 
 #collapseRules.expanded {
-    height: 21em; 
-    border: 0.2em solid rgb(0, 0, 0); 
+    height: 21em;
+    border: 0.2em solid rgb(0, 0, 0);
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 0; 
+    padding: 0;
 }
 
-.rules-text-game{
+.rules-text-game {
     margin-left: 10px;
     padding-left: 10px;
     color: rgb(0, 0, 0);
@@ -971,6 +989,5 @@ a {
     height: 22em;
     font-size: 13px;
     font-family: 'Martian Mono', monospace;
-    position: absolute; 
+    position: absolute;
 }
-

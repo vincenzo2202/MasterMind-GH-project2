@@ -1,11 +1,10 @@
- 
 // -------------------- Callapse Window Rules Game 
 const rulesCollapseButton = document.getElementById('rulesCollapseButton');
 
 rulesCollapseButton.addEventListener('click', () => {
     collapseRules.classList.toggle('expanded');
-    
-});   
+
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     const collapseRules = document.getElementById('collapseRules');
@@ -26,85 +25,9 @@ applyColorToElement(document.getElementById('selected2'), colors2);
 applyColorToElement(document.getElementById('selected3'), colors3);
 applyColorToElement(document.getElementById('selected4'), colors4);
 
-
-
- 
-
-// seleccionar colores 
-
-let lastSelectedColor = null;
-
-selected1.addEventListener('click', () => { 
-    lastSelectedColor = getComputedStyle(selected1).backgroundColor;
-    applyColorToDestinyElements();
-});
-
-selected2.addEventListener('click', () => { 
-    lastSelectedColor = getComputedStyle(selected2).backgroundColor;
-    applyColorToDestinyElements();
-});
-
-selected3.addEventListener('click', () => { 
-    lastSelectedColor = getComputedStyle(selected3).backgroundColor;
-    applyColorToDestinyElements();
-});
-
-selected4.addEventListener('click', () => { 
-    lastSelectedColor = getComputedStyle(selected4).backgroundColor;
-    applyColorToDestinyElements();
-});
-
- 
-
-// funcioneas para aplicar el color al row1 del juego
- 
-
-function applyColorToElement(element, color) {
-    element.style.backgroundColor = color;  
-}
-
-function applyColorToDestinyElements(row) {
-    const DestinyColor = document.querySelectorAll(row); 
-  
-    DestinyColor.forEach((circle) => {
-        circle.addEventListener('click', () => {
-            if (lastSelectedColor) {
-                const destinationColor = getComputedStyle(circle).backgroundColor;
-                applyColorToElement(circle, lastSelectedColor); 
-            } 
-        });
-    }); 
-}
-
-// ---- Se ejecuta la funcion para todas las columnas
-let Check = 1;
-
-if (Check = 1){
-    applyColorToDestinyElements('.circleMastermind.row1')
-}else if (Check = 2){
-    applyColorToDestinyElements('.circleMastermind.row2') 
-}else if(Check = 3) {
-    applyColorToDestinyElements('.circleMastermind.row3')  
-}else if (Check = 4){
-    applyColorToDestinyElements('.circleMastermind.row4')
-}else if (Check = 5){
-    applyColorToDestinyElements('.circleMastermind.row5')
-} else if (Check = 6) {
-    applyColorToDestinyElements('.circleMastermind.row6')
-}else if (Check = 7) {
-    applyColorToDestinyElements('.circleMastermind.row7')
-}else if (Check = 8){
-    applyColorToDestinyElements('.circleMastermind.row8')
-}else if (Check = 9){
-    applyColorToDestinyElements('.circleMastermind.row9')
-}else if (Check = 10){
-    applyColorToDestinyElements('.circleMastermind.row10')
-}
-
-
 // ---------------- array ganador--------
 
-let arrayKey = []
+let arrayKey = ['rgb(255, 0, 0)', 'rgb(255, 0, 0)', 'rgb(255, 0, 0)', 'rgb(255, 255, 255)']
 
 for (let i = 1; i <= 4; i++) {
     const random = Math.floor(Math.random() * 4) + 1;
@@ -117,8 +40,161 @@ for (let i = 1; i <= 4; i++) {
     } else {
         arrayKey.push(localStorage.getItem("colors4"));
     }
-} 
+}
 
 console.log(arrayKey);
- 
 
+
+
+// seleccionar colores 
+
+let lastSelectedColor = null;
+
+selected1.addEventListener('click', () => {
+    lastSelectedColor = getComputedStyle(selected1).backgroundColor;
+    applyColorToDestinyElements();
+});
+
+selected2.addEventListener('click', () => {
+    lastSelectedColor = getComputedStyle(selected2).backgroundColor;
+    applyColorToDestinyElements();
+});
+
+selected3.addEventListener('click', () => {
+    lastSelectedColor = getComputedStyle(selected3).backgroundColor;
+    applyColorToDestinyElements();
+});
+
+selected4.addEventListener('click', () => {
+    lastSelectedColor = getComputedStyle(selected4).backgroundColor;
+    applyColorToDestinyElements();
+});
+
+
+
+// funcioneas para aplicar el color al row  del juego
+
+
+function applyColorToElement(element, color) {
+    element.style.backgroundColor = color;
+}
+let arrayRow = [];
+function applyColorToDestinyElements(row) {
+    let lastSelectedColors = '';
+
+    const DestinyColor = document.querySelectorAll(row);
+
+    DestinyColor.forEach((circle) => {
+        circle.addEventListener('click', () => {
+            if (lastSelectedColor) {
+                applyColorToElement(circle, lastSelectedColor);
+
+                const DestinyColor = document.querySelectorAll(row);
+
+                arrayRow = [];
+
+                DestinyColor.forEach((DestinyColor) => {
+                    const computedStyle = window.getComputedStyle(DestinyColor);
+                    const backgroundColor = computedStyle.backgroundColor;
+                    arrayRow.push(backgroundColor);
+
+                });
+
+                arrayRowNew.push(arrayRow)
+
+
+            }
+        });
+    });
+}
+
+const arrayRowNew = []
+
+console.log(arrayRowNew);
+
+// Evaluar si el array compara los dos arrays // esta em fase de prueba, se trasladan al array pero se tiene que probar
+
+if (arrayRowNew === arrayKey) {
+    console.log("colores iguales ");
+} else {
+    console.log("los colores no son iguales ");
+}
+
+// ---- Se ejecuta la funcion para todas las columnas
+
+
+const checkButtom = document.getElementById('checkbuttom');
+let checkIterador = 1;
+
+applyColorToDestinyElements('.row1');
+
+checkButtom.addEventListener('click', () => {
+    checkIterador += 1;
+
+    if (checkIterador === 1) {
+        applyColorToDestinyElements('.row1');
+
+    } else if (checkIterador === 2) {
+        applyColorToDestinyElements('.row2');
+    } else if (checkIterador == 3) {
+        applyColorToDestinyElements('.row3');
+    } else if (checkIterador === 4) {
+        applyColorToDestinyElements('.row4');
+    } else if (checkIterador === 5) {
+        applyColorToDestinyElements('.row5');
+    } else if (checkIterador === 6) {
+        applyColorToDestinyElements('.row6');
+    } else if (checkIterador === 7) {
+        applyColorToDestinyElements('.row7');
+    } else if (checkIterador === 8) {
+        applyColorToDestinyElements('.row8');
+    } else if (checkIterador === 9) {
+        applyColorToDestinyElements('.row9');
+    } else if (checkIterador === 10) {
+        applyColorToDestinyElements('.row10');
+    }
+});
+
+
+// ----------se declaran las constantes 
+
+const row1col1 = document.querySelector("#row1col1");
+const row1col2 = document.querySelector("#row1col2");
+const row1col3 = document.querySelector("#row1col3");
+const row1col4 = document.querySelector("#row1col4");
+const row2col1 = document.querySelector("#row2col1");
+const row2col2 = document.querySelector("#row2col2");
+const row2col3 = document.querySelector("#row2col3");
+const row2col4 = document.querySelector("#row2col4");
+const row3col1 = document.querySelector("#row3col1");
+const row3col2 = document.querySelector("#row3col2");
+const row3col3 = document.querySelector("#row3col3");
+const row3col4 = document.querySelector("#row3col4");
+const row4col1 = document.querySelector("#row4col1");
+const row4col2 = document.querySelector("#row4col2");
+const row4col3 = document.querySelector("#row4col3");
+const row4col4 = document.querySelector("#row4col4");
+const row5col1 = document.querySelector("#row5col1");
+const row5col2 = document.querySelector("#row5col2");
+const row5col3 = document.querySelector("#row5col3");
+const row5col4 = document.querySelector("#row5col4");
+const row6col1 = document.querySelector("#row6col1");
+const row6col2 = document.querySelector("#row6col2");
+const row6col3 = document.querySelector("#row6col3");
+const row6col4 = document.querySelector("#row6col4");
+const row7col1 = document.querySelector("#row7col1");
+const row7col2 = document.querySelector("#row7col2");
+const row7col3 = document.querySelector("#row7col3");
+const row7col4 = document.querySelector("#row7col4");
+const row8col1 = document.querySelector("#row8col1");
+const row8col2 = document.querySelector("#row8col2");
+const row8col3 = document.querySelector("#row8col3");
+const row8col4 = document.querySelector("#row8col4");
+const row9col1 = document.querySelector("#row9col1");
+const row9col2 = document.querySelector("#row9col2");
+const row9col3 = document.querySelector("#row9col3");
+const row9col4 = document.querySelector("#row9col4");
+const row10col1 = document.querySelector("#row10col1");
+const row10col2 = document.querySelector("#row10col2");
+const row10col3 = document.querySelector("#row10col3");
+const row10col4 = document.querySelector("#row10col4");
