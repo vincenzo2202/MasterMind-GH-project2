@@ -87,22 +87,25 @@ function applyColorToDestinyElements(row) {
     
     DestinyColor.forEach((row) => { 
         row.addEventListener('click', () => {
-            if (lastSelectedColor) {   
+            if (lastSelectedColor && arrayRow.length<4) {    
                 const computedStyle = window.getComputedStyle(row);
+                applyColorToElement(row, lastSelectedColor);
                 const backgroundColor = computedStyle.backgroundColor;
-                    if(arrayRow.length<=4){
-                        applyColorToElement(row, lastSelectedColor);
-                        arrayRow.push(backgroundColor); 
-                    }
-                    console.log(arrayRow);
-                
+                arrayRow.push(backgroundColor);  
             }
+            console.log(arrayRow); 
         });
     });
-}
-const arrayRowNew = []
+} 
 
-console.log(arrayRowNew); 
+// comparar los arrays 
+const arrayCompare = arrayRow.length
+ 
+
+
+
+
+
 
 // ---- Se ejecuta la funcion para todas las columnas
 
@@ -113,29 +116,38 @@ let checkIterador = 1;
 applyColorToDestinyElements('.row1');
 
 checkButtom.addEventListener('click', () => {
-    checkIterador += 1;
-
+    
     if (checkIterador === 1) {   
         applyColorToDestinyElements('.row1');  
-        } else if (checkIterador === 2) {
-            applyColorToDestinyElements('.row2');
-        } else if (checkIterador == 3) {
-            applyColorToDestinyElements('.row3');
-        } else if (checkIterador === 4) {
-            applyColorToDestinyElements('.row4');
-        } else if (checkIterador === 5) {
-            applyColorToDestinyElements('.row5');
-        } else if (checkIterador === 6) {
-            applyColorToDestinyElements('.row6');
-        } else if (checkIterador === 7) {
-            applyColorToDestinyElements('.row7');
-        } else if (checkIterador === 8) {
-            applyColorToDestinyElements('.row8');
-        } else if (checkIterador === 9) {
-            applyColorToDestinyElements('.row9');
-        } else if (checkIterador === 10) {
-            applyColorToDestinyElements('.row10');
+    } else if (checkIterador === 2) {
+        arrayRow.splice(0, arrayRow.length);
+        applyColorToDestinyElements('.row2');
+    } else if (checkIterador == 3) {
+        arrayRow.splice(0, arrayRow.length);
+        applyColorToDestinyElements('.row3');
+    } else if (checkIterador === 4) {
+        arrayRow.splice(0, arrayRow.length);
+        applyColorToDestinyElements('.row4');
+    } else if (checkIterador === 5) {
+        arrayRow.splice(0, arrayRow.length);
+        applyColorToDestinyElements('.row5');
+    } else if (checkIterador === 6) {
+        arrayRow.splice(0, arrayRow.length);
+        applyColorToDestinyElements('.row6');
+    } else if (checkIterador === 7) {
+        arrayRow.splice(0, arrayRow.length);
+        applyColorToDestinyElements('.row7');
+    } else if (checkIterador === 8) {
+        arrayRow.splice(0, arrayRow.length);
+        applyColorToDestinyElements('.row8');
+    } else if (checkIterador === 9) {
+        arrayRow.splice(0, arrayRow.length);
+        applyColorToDestinyElements('.row9');
+    } else if (checkIterador === 10) {
+        arrayRow.splice(0, arrayRow.length);
+        applyColorToDestinyElements('.row10');
     }
+    checkIterador++
 }); 
 // ----------se declaran las constantes 
 
