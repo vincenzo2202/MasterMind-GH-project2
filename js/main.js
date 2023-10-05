@@ -78,11 +78,11 @@ selected4.addEventListener('click', () => {
 function applyColorToElement(element, color) {
     element.style.backgroundColor = color;
 }
-let arrayRow = []; 
+
+let arrayRow = [];  
 
 function applyColorToDestinyElements(row) {
     // let lastSelectedColors = '';
-    
     const DestinyColor = document.querySelectorAll(row);
     
     DestinyColor.forEach((row) => { 
@@ -92,63 +92,143 @@ function applyColorToDestinyElements(row) {
                 applyColorToElement(row, lastSelectedColor);
                 const backgroundColor = computedStyle.backgroundColor;
                 arrayRow.push(backgroundColor);  
+                localStorage.setItem('arrayRow', arrayRow)  
             }
             console.log(arrayRow); 
         });
     });
-} 
-
-// comparar los arrays 
-const arrayCompare = arrayRow.length
+}  
  
-
-
-
-
-
-
 // ---- Se ejecuta la funcion para todas las columnas
-
-
+ 
 const checkButtom = document.getElementById('checkbuttom');
 let checkIterador = 1;
 
 applyColorToDestinyElements('.row1');
 
-checkButtom.addEventListener('click', () => {
-    
-    if (checkIterador === 1) {   
-        applyColorToDestinyElements('.row1');  
-    } else if (checkIterador === 2) {
-        arrayRow.splice(0, arrayRow.length);
-        applyColorToDestinyElements('.row2');
-    } else if (checkIterador == 3) {
-        arrayRow.splice(0, arrayRow.length);
-        applyColorToDestinyElements('.row3');
-    } else if (checkIterador === 4) {
-        arrayRow.splice(0, arrayRow.length);
-        applyColorToDestinyElements('.row4');
-    } else if (checkIterador === 5) {
-        arrayRow.splice(0, arrayRow.length);
-        applyColorToDestinyElements('.row5');
-    } else if (checkIterador === 6) {
-        arrayRow.splice(0, arrayRow.length);
-        applyColorToDestinyElements('.row6');
-    } else if (checkIterador === 7) {
-        arrayRow.splice(0, arrayRow.length);
-        applyColorToDestinyElements('.row7');
-    } else if (checkIterador === 8) {
-        arrayRow.splice(0, arrayRow.length);
-        applyColorToDestinyElements('.row8');
-    } else if (checkIterador === 9) {
-        arrayRow.splice(0, arrayRow.length);
-        applyColorToDestinyElements('.row9');
-    } else if (checkIterador === 10) {
-        arrayRow.splice(0, arrayRow.length);
-        applyColorToDestinyElements('.row10');
-    }
+
+checkButtom.addEventListener('click', () => { 
+    console.log(checkIterador);
     checkIterador++
+     
+    
+    if (checkIterador === 1) {
+        if (arrayRow.length<=3 ){
+            alert("yeee te falta un color")
+            checkIterador--  
+        }else{  
+            applyColorToDestinyElements('.row1');   
+
+            if(arrayKeystring===arrayrRowString){
+                console.log("ganaste");
+            }
+        }
+ 
+    } else if (checkIterador === 2) { 
+        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+            alert("yeee te falta un color")
+            checkIterador--
+        }else{ 
+            arrayRow.splice(0, arrayRow.length);
+            applyColorToDestinyElements('.row2');  
+            if(arrayKeystring===arrayrRowString){
+                console.log("ganaste");
+            }
+             
+        }
+    } else if (checkIterador == 3 ) {
+        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+            alert("yeee te falta un color")
+            checkIterador--
+        }else{ 
+            arrayRow.splice(0, arrayRow.length);
+            applyColorToDestinyElements('.row3'); 
+            if(arrayKeystring===arrayrRowString){
+                console.log("ganaste");
+            }
+             
+        }
+    } else if (checkIterador === 4) {
+        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+            alert("yeee te falta un color")
+            checkIterador--
+        }else{ 
+            arrayRow.splice(0, arrayRow.length);
+            applyColorToDestinyElements('.row4');
+             
+        }
+    } else if (checkIterador === 5) {
+        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+            alert("yeee te falta un color")
+            checkIterador--
+        }else{ 
+            arrayRow.splice(0, arrayRow.length);
+            applyColorToDestinyElements('.row5');
+             
+        }
+    } else if (checkIterador === 6) {
+        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+            alert("yeee te falta un color")
+            checkIterador--
+        }else{ 
+            arrayRow.splice(0, arrayRow.length);
+            applyColorToDestinyElements('.row6');
+             
+        }
+ 
+    } else if (checkIterador === 7) {
+        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+            alert("yeee te falta un color")
+            checkIterador--
+        }else{ 
+            arrayRow.splice(0, arrayRow.length);
+            applyColorToDestinyElements('.row7');
+             
+        }
+    } else if (checkIterador === 8) {
+        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+            alert("yeee te falta un color")
+            checkIterador--
+        }else{ 
+            arrayRow.splice(0, arrayRow.length);
+            applyColorToDestinyElements('.row8');
+             
+        }
+    } else if (checkIterador === 9 ) {
+        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+            alert("yeee te falta un color")
+            checkIterador--
+
+        }else{ 
+            arrayRow.splice(0, arrayRow.length);
+            applyColorToDestinyElements('.row9');
+             
+        }
+    } else if (checkIterador === 10) {
+        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+            alert("yeee te falta un color")
+            checkIterador--
+        }else{ 
+            arrayRow.splice(0, arrayRow.length);
+            applyColorToDestinyElements('.row10');
+             
+        }
+    }
+    
+    
 }); 
+
+// comparar los arrays 
+ 
+// se manda a localstorage la key y se pasa a string
+  
+let arrayKeystring =arrayKey.toString() 
+ console.log(arrayKeystring);
+// se trae del local storage el arrayrow se pasa a srting
+ let arrayrRowString = localStorage.getItem('arrayRow', arrayRow.toString())
+ console.log(arrayrRowString);
+ 
+ 
 // ----------se declaran las constantes 
 
 const row1col1 = document.querySelector("#row1col1");
@@ -191,24 +271,3 @@ const row10col1 = document.querySelector("#row10col1");
 const row10col2 = document.querySelector("#row10col2");
 const row10col3 = document.querySelector("#row10col3");
 const row10col4 = document.querySelector("#row10col4");
-// --------------------- apuntes -----------------
-
-
-
-/*
-id[id.lenght-1]
-
-1. get.element para coger el elemento 
-
-2. add event listener para que reaccione al click
-
-
-
-
-*/  
-
-// const c =JSON.stringify(a) = 
-// const d = JSON.stringify(b)
-
-
-// if(c====d)
