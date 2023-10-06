@@ -79,156 +79,208 @@ function applyColorToElement(element, color) {
     element.style.backgroundColor = color;
 }
 
-let arrayRow = [];  
+let arrayRow = [];
 
 function applyColorToDestinyElements(row) {
     // let lastSelectedColors = '';
     const DestinyColor = document.querySelectorAll(row);
-    
-    DestinyColor.forEach((row) => { 
+
+    DestinyColor.forEach((row) => {
         row.addEventListener('click', () => {
-            if (lastSelectedColor && arrayRow.length<4) {    
+            if (lastSelectedColor && arrayRow.length < 4) {
                 const computedStyle = window.getComputedStyle(row);
                 applyColorToElement(row, lastSelectedColor);
                 const backgroundColor = computedStyle.backgroundColor;
-                arrayRow.push(backgroundColor);  
-                localStorage.setItem('arrayRow', arrayRow)  
+                arrayRow.push(backgroundColor);
+                localStorage.setItem('arrayRow', arrayRow)
             }
-            console.log(arrayRow); 
+            console.log(arrayRow);
         });
     });
-}  
- 
+}
+
 // ---- Se ejecuta la funcion para todas las columnas
- 
+
 const checkButtom = document.getElementById('checkbuttom');
-let checkIterador = 1;
+
 
 applyColorToDestinyElements('.row1');
 
+let checkIterador = 1;
 
-checkButtom.addEventListener('click', () => { 
-    console.log(checkIterador);
-    checkIterador++
-     
+checkButtom.addEventListener('click', () => {
+    checkIterador++  
     
     if (checkIterador === 1) {
-        if (arrayRow.length<=3 ){
+        if (arrayRow.length <= 3 ) {
             alert("yeee te falta un color")
-            checkIterador--  
-        }else{  
-            applyColorToDestinyElements('.row1');   
+            checkIterador--
+        } else {
+            applyColorToDestinyElements('.row1');
+            let arrayrRowString = localStorage.getItem('arrayRow', arrayRow.toString())
+            console.log(arrayrRowString); 
+            if (arrayKeystring === arrayrRowString) {
+                console.log("ganaste");
+            }
+            
+        }
+        
+    } else if (checkIterador === 2) {
+        console.log(checkIterador);// funciona 
+        if (arrayRow.length <= 3 && arrayRow.length !== 0) {
+            alert("yeee te falta un color")
+            checkIterador--
+        } else {
+            arrayRow.splice(0, arrayRow.length);
+            applyColorToDestinyElements('.row2');
+            arrayrRowString = localStorage.getItem('arrayRow', arrayRow.toString())
+            console.log(arrayrRowString);
 
-            if(arrayKeystring===arrayrRowString){
+            if (arrayKeystring === arrayrRowString) {
                 console.log("ganaste");
             }
+            
+
         }
- 
-    } else if (checkIterador === 2) { 
-        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+    } else if (checkIterador == 3) {
+        if (arrayRow.length <= 3 && arrayRow.length !== 0) {
             alert("yeee te falta un color")
             checkIterador--
-        }else{ 
+        } else {
             arrayRow.splice(0, arrayRow.length);
-            applyColorToDestinyElements('.row2');  
-            if(arrayKeystring===arrayrRowString){
+            applyColorToDestinyElements('.row3');
+            arrayrRowString = localStorage.getItem('arrayRow', arrayRow.toString())
+            console.log(arrayrRowString);
+
+            if (arrayKeystring === arrayrRowString) {
                 console.log("ganaste");
             }
-             
-        }
-    } else if (checkIterador == 3 ) {
-        if (arrayRow.length<=3 && arrayRow.length!==0 ){
-            alert("yeee te falta un color")
-            checkIterador--
-        }else{ 
-            arrayRow.splice(0, arrayRow.length);
-            applyColorToDestinyElements('.row3'); 
-            if(arrayKeystring===arrayrRowString){
-                console.log("ganaste");
-            }
-             
+            
+
         }
     } else if (checkIterador === 4) {
-        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+        if (arrayRow.length <= 3 && arrayRow.length !== 0) {
             alert("yeee te falta un color")
             checkIterador--
-        }else{ 
+        } else {
             arrayRow.splice(0, arrayRow.length);
             applyColorToDestinyElements('.row4');
+            arrayrRowString = localStorage.getItem('arrayRow', arrayRow.toString())
+            console.log(arrayrRowString);
+
+            if (arrayKeystring === arrayrRowString) {
+                console.log("ganaste");
+            }
              
+
         }
     } else if (checkIterador === 5) {
-        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+        if (arrayRow.length <= 3 && arrayRow.length !== 0) {
             alert("yeee te falta un color")
             checkIterador--
-        }else{ 
+        } else {
             arrayRow.splice(0, arrayRow.length);
             applyColorToDestinyElements('.row5');
-             
+            arrayrRowString = localStorage.getItem('arrayRow', arrayRow.toString())
+            console.log(arrayrRowString);
+
+            if (arrayKeystring === arrayrRowString) {
+                console.log("ganaste");
+            }
+
         }
     } else if (checkIterador === 6) {
-        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+        if (arrayRow.length <= 3 && arrayRow.length !== 0) {
             alert("yeee te falta un color")
             checkIterador--
-        }else{ 
+        } else {
             arrayRow.splice(0, arrayRow.length);
             applyColorToDestinyElements('.row6');
-             
+            arrayrRowString = localStorage.getItem('arrayRow', arrayRow.toString())
+            console.log(arrayrRowString);
+
+            if (arrayKeystring === arrayrRowString) {
+                console.log("ganaste");
+            }
+
         }
- 
+
     } else if (checkIterador === 7) {
-        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+        if (arrayRow.length <= 3 && arrayRow.length !== 0) {
             alert("yeee te falta un color")
             checkIterador--
-        }else{ 
+        } else {
             arrayRow.splice(0, arrayRow.length);
             applyColorToDestinyElements('.row7');
-             
+            arrayrRowString = localStorage.getItem('arrayRow', arrayRow.toString())
+            console.log(arrayrRowString);
+
+            if (arrayKeystring === arrayrRowString) {
+                console.log("ganaste");
+            }
+
         }
     } else if (checkIterador === 8) {
-        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+        if (arrayRow.length <= 3 && arrayRow.length !== 0) {
             alert("yeee te falta un color")
             checkIterador--
-        }else{ 
+        } else {
             arrayRow.splice(0, arrayRow.length);
             applyColorToDestinyElements('.row8');
-             
+            arrayrRowString = localStorage.getItem('arrayRow', arrayRow.toString())
+            console.log(arrayrRowString);
+
+            if (arrayKeystring === arrayrRowString) {
+                console.log("ganaste");
+            }
+
         }
-    } else if (checkIterador === 9 ) {
-        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+    } else if (checkIterador === 9) {
+        if (arrayRow.length <= 3 && arrayRow.length !== 0) {
             alert("yeee te falta un color")
             checkIterador--
 
-        }else{ 
+        } else {
             arrayRow.splice(0, arrayRow.length);
             applyColorToDestinyElements('.row9');
-             
+            arrayrRowString = localStorage.getItem('arrayRow', arrayRow.toString())
+            console.log(arrayrRowString);
+
+            if (arrayKeystring === arrayrRowString) {
+                console.log("ganaste");
+            }
+
         }
     } else if (checkIterador === 10) {
-        if (arrayRow.length<=3 && arrayRow.length!==0 ){
+        if (arrayRow.length <= 3 && arrayRow.length !== 0) {
             alert("yeee te falta un color")
             checkIterador--
-        }else{ 
+        } else {
             arrayRow.splice(0, arrayRow.length);
             applyColorToDestinyElements('.row10');
-             
+
+            arrayrRowString = localStorage.getItem('arrayRow', arrayRow.toString()) // esto trae del local storage e imprime 
+            console.log(arrayrRowString);
+
+            if (arrayKeystring === arrayrRowString) {
+                console.log("ganaste");
+            } 
         }
-    }
+    } 
     
-    
-}); 
+   
+});
+
 
 // comparar los arrays 
- 
+
 // se manda a localstorage la key y se pasa a string
-  
-let arrayKeystring =arrayKey.toString() 
+
+let arrayKeystring = arrayKey.toString()
  console.log(arrayKeystring);
-// se trae del local storage el arrayrow se pasa a srting
- let arrayrRowString = localStorage.getItem('arrayRow', arrayRow.toString())
- console.log(arrayrRowString);
  
- 
+
+
 // ----------se declaran las constantes 
 
 const row1col1 = document.querySelector("#row1col1");
