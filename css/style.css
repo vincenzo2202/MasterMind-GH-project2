@@ -1013,3 +1013,25 @@ a {
 .play-again-text{
     color: white;
 }
+
+.you-lose {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    height: 1.5em;
+    font-size: 6em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: 'Monoton', cursive;
+    text-shadow: 5px 2px 2px #000000;
+}
+
+.you-win {
+    color: rgb(55, 157, 0);
+    text-align: center;
+    height: 1.5em;
+    font-size: 6em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: 'Monoton', cursive;
+    text-shadow: 5px 2px 2px #000000;
+}
