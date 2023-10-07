@@ -41,18 +41,14 @@ function applyColorToElement(element, color) {
 for (let i = 0; i < colorSelected.length; i++) {
     colorSelected[i].addEventListener('click', () => {
         if (lastSelectedColor ) {
-            const selectedColor = getComputedStyle(colorSelected[i]).backgroundColor; 
-           
-            
+            const selectedColor = getComputedStyle(colorSelected[i]).backgroundColor;  
             if (!usedColors[selectedColor]) {
                 applyColorToElement(lastSelectedColor, selectedColor);
   
             } else {
                 alert('El color ya ha sido seleccionado anteriormente. Elige otro color.');
-            }
-           
-        }  
-         
+            } 
+        }   
     });
     
 }  
@@ -70,6 +66,9 @@ next.addEventListener('click',()=>{
         alert("Debes decir un nombre") 
     }
 } )
+
+
+
 
  
 
