@@ -226,7 +226,7 @@ applyColorToDestinyElements('.row1');
 
 let checkIterador = 1;
 
-checkButtom.addEventListener('click', () => { 
+checkButtom.addEventListener('click', () => {
     if (checkIterador === 1) {
         if (arrayRow.length <= 3) {
             alert("yeee te falta un color")
@@ -238,7 +238,7 @@ checkButtom.addEventListener('click', () => {
 
             if (arrayKeystring === arrayrRowString) {
                 console.log("ganaste");
-                
+                window.location.href = '../pages/winnerGame.html'
             }
         }
         if (row1col1.style.backgroundColor === arrayKey[0]) {
@@ -274,6 +274,7 @@ checkButtom.addEventListener('click', () => {
         }
         if (arrayKeystring === arrayrRowString) {
             console.log("ganaste");
+            window.location.href = '../pages/winnerGame.html'
         }
         if (row1col1.style.backgroundColor === arrayKey[0]) {
             circleValidator11.style.backgroundColor = 'green'
@@ -306,6 +307,12 @@ checkButtom.addEventListener('click', () => {
             arrayrRowString = localStorage.getItem('arrayRow', arrayRow.toString())
             console.log(arrayrRowString);
         }
+
+        if (arrayKeystring === arrayrRowString) {
+            console.log("ganaste");
+            window.location.href = '../pages/winnerGame.html'
+        }
+
         if (row2col1.style.backgroundColor === arrayKey[0]) {
             circleValidator21.style.backgroundColor = 'green'
         } else {
@@ -338,6 +345,7 @@ checkButtom.addEventListener('click', () => {
 
             if (arrayKeystring === arrayrRowString) {
                 console.log("ganaste");
+                window.location.href = '../pages/winnerGame.html'
             }
             if (row3col1.style.backgroundColor === arrayKey[0]) {
                 circleValidator31.style.backgroundColor = 'green'
@@ -371,6 +379,7 @@ checkButtom.addEventListener('click', () => {
             console.log(arrayrRowString);
             if (arrayKeystring === arrayrRowString) {
                 console.log("ganaste");
+                window.location.href = '../pages/winnerGame.html'
             }
         }
         if (row4col1.style.backgroundColor === arrayKey[0]) {
@@ -405,6 +414,7 @@ checkButtom.addEventListener('click', () => {
 
             if (arrayKeystring === arrayrRowString) {
                 console.log("ganaste");
+                window.location.href = '../pages/winnerGame.html'
             }
         }
         if (row5col1.style.backgroundColor === arrayKey[0]) {
@@ -439,6 +449,7 @@ checkButtom.addEventListener('click', () => {
 
             if (arrayKeystring === arrayrRowString) {
                 console.log("ganaste");
+                window.location.href = '../pages/winnerGame.html'
             }
         }
         if (row6col1.style.backgroundColor === arrayKey[0]) {
@@ -473,6 +484,7 @@ checkButtom.addEventListener('click', () => {
 
             if (arrayKeystring === arrayrRowString) {
                 console.log("ganaste");
+                window.location.href = '../pages/winnerGame.html'
             }
         }
         if (row7col1.style.backgroundColor === arrayKey[0]) {
@@ -507,6 +519,7 @@ checkButtom.addEventListener('click', () => {
 
             if (arrayKeystring === arrayrRowString) {
                 console.log("ganaste");
+                window.location.href = '../pages/winnerGame.html'
             }
         }
         if (row8col1.style.backgroundColor === arrayKey[0]) {
@@ -538,9 +551,7 @@ checkButtom.addEventListener('click', () => {
             applyColorToDestinyElements('.row10');
             arrayrRowString = localStorage.getItem('arrayRow', arrayRow.toString()) // esto trae del local storage e imprime 
             console.log(arrayrRowString);
-            if (arrayKeystring === arrayrRowString) {
-                console.log("ganaste");
-            }
+            
         }
         if (row9col1.style.backgroundColor === arrayKey[0]) {
             circleValidator91.style.backgroundColor = 'green'
@@ -564,6 +575,14 @@ checkButtom.addEventListener('click', () => {
         }
 
     } else if (checkIterador === 11) {
+        if (arrayKeystring === arrayrRowString) {
+            console.log("ganaste");
+            window.location.href = '../pages/winnerGame.html'
+        }else{
+            console.log("perdiste");
+            window.location.href = '../pages/loserGame.html' 
+        } 
+
         if (row9col1.style.backgroundColor === arrayKey[0]) {
             circleValidator91.style.backgroundColor = 'green'
         } else {
