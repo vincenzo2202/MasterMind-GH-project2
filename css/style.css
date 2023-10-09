@@ -166,8 +166,7 @@
      font-family: 'Monoton', cursive;
      font-size: 5em;
      color: black;
- } 
- /* poner los @media */
+ }  
  .levels:hover {
      text-shadow: #FC0 1px 0 10px;
      cursor: pointer;
@@ -910,4 +909,14 @@
      z-index: 100;
      top: 200px;
      left: 130px;
- }
+ } 
+ #hard:hover{
+      text-shadow: none;
+     cursor: pointer;
+     transform: none;
+ } 
+ #medium:hover{
+    text-shadow: none;
+   cursor: pointer;
+   transform: none;
+}

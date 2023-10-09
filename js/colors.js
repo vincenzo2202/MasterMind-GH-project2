@@ -1,5 +1,4 @@
-// Se declaran las variables 
-
+// Se declaran las variables  
 const color1 = document.getElementById('colors1');
 const color2 = document.getElementById('colors2');
 const color3 = document.getElementById('colors3');
@@ -7,9 +6,7 @@ const color4 = document.getElementById('colors4');
 const arrayColor = []
 const colorSelected = document.getElementsByClassName('choice-color');
 let lastSelectedColor = null;
-
-// Función para aplicar el color al elemento seleccionado
-
+// Función para aplicar el color al elemento seleccionado 
 const colors = document.querySelectorAll('.colors')
 
 colors.forEach((color) => {
@@ -38,22 +35,26 @@ for (let i = 0; i < colorSelected.length; i++) {
         if (lastSelectedColor) {
             const selectedColor = getComputedStyle(colorSelected[i]).backgroundColor;
             if (!usedColors[selectedColor]) {
-                applyColorToElement(lastSelectedColor, selectedColor); 
+                applyColorToElement(lastSelectedColor, selectedColor);
             } else {
                 alert('El color ya ha sido seleccionado anteriormente. Elige otro color.');
             }
         }
     });
-
-}  
-
+};
 const next = document.getElementById('next')
+const backgroundCircule = (circle) => {
+    return window.getComputedStyle(circle).backgroundColor
+}
 
 next.addEventListener('click', () => {
 
-    if (next.value !== " ") {
+    if (backgroundCircule(color1) !== "rgb(255, 255, 255)"
+        && backgroundCircule(color2) !== "rgb(255, 255, 255)"
+        && backgroundCircule(color3) !== "rgb(255, 255, 255)"
+        && backgroundCircule(color4) !== "rgb(255, 255, 255)") {
         window.location.href = '../pages/easyLevel.html'
     } else {
-        alert("Debes decir un nombre")
+        alert('Te faltan colores')
     }
-}) 
+});

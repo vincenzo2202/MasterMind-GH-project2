@@ -30,23 +30,19 @@ En este caso, el escenario de juego se ejecuta en un tablero donde un solo jugad
 </div>
 <div style="text-align: center;">
 <img src="./img/Capturas/captura-2.png" alt="lenguajes" width="500"/> 
-</div>
-
+</div> 
 <div style="text-align: center;">
 <img src="./img/Capturas/captura-3.png" alt="lenguajes" width="500"/> 
-</div>
-
+</div> 
 <div style="text-align: center;">
 <img src="./img/Capturas/captura-4.png" alt="lenguajes" width="500"/> 
-</div>
-
+</div> 
 <div style="text-align: center;"> 
 <img src="./img/Capturas/captura-5.png" alt="lenguajes" width="500"/>
 </div>
 <div style="text-align: center;"> 
 <img src="./img/Capturas/captura-6.png" alt="lenguajes" width="500"/>
-</div>
-
+</div> 
 <div style="text-align: center;"> 
 <img src="./img/Capturas/captura-7.png" alt="lenguajes" width="500"/>
 </div>
@@ -68,8 +64,7 @@ En este caso, el escenario de juego se ejecuta en un tablero donde un solo jugad
 <div style="text-align: center;"> 
 <img src="./img/Capturas/captura-14.png" alt="lenguajes" width="500"/>
 </div>
- 
-
+  
 ## 🚧 Problemas y posibles soluciones 💡
 
 ## Tecnologías Utilizadas
