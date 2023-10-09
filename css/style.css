@@ -1,1054 +1,1083 @@
- 
+ @media only screen and (max-width: 750px) {
+     easyLevel.html {
+         font-size: 0.5em;
+         transform: rotate(90deg);
+         width: 100vw;
+         height: 100vh;
+     }
+ }
 
-@media only screen and (max-width: 750px) {
-    easyLevel.html {
-        font-size: 0.5em;
-        transform: rotate(90deg);
-        /* transform-origin: left top; */
-        width: 100vw; /* Asegura que el contenido en la pantalla se ajuste correctamente */
-        height: 100vh; /* Asegura que el contenido en la pantalla se ajuste correctamente */
-        /* overflow: hidden; Evita desbordamientos */
-        /* position: absolute; Ajusta la posición */
-    }
-}
+ @media only screen and (max-width: 990px) {
+     html {
+         font-size: 0.7em;
+         position: absolute;
+     }
+ }
 
-@media only screen and (max-width: 990px) {
-    html {
-      font-size: 0.7em;
-      position: absolute;
-    }
-  }
-  
-  @media only screen and (max-width: 750px) {
-    html {
-      font-size: 0.5em;
-      position: absolute;
-    }
-  }
-  
-  @media only screen and (max-width: 680px) {
-    html {
-      font-size: 0.33em;
-      position: absolute;
-    }
-  }
+ @media only screen and (max-width: 750px) {
+     html {
+         font-size: 0.5em;
+         position: absolute;
+     }
+ }
 
-body {
-    background-image: url(../img/stand-publicidad-productos-cosmeticos-exposicion-podio-madera-sobre-fondo-verde-hojas-sha.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+ @media only screen and (max-width: 680px) {
+     html {
+         font-size: 0.33em;
+         position: absolute;
+     }
+ }
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ body {
+     background-image: url(../img/stand-publicidad-productos-cosmeticos-exposicion-podio-madera-sobre-fondo-verde-hojas-sha.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     width: 100vw;
+     height: 100vh;
+     overflow: hidden;
 
-    flex-direction: column;
-}
+     display: flex;
+     justify-content: center;
+     align-items: center;
 
-#container {
-    width: 45em;
-    height: 30em;
+     flex-direction: column;
+ }
+
+ #container {
+     width: 45em;
+     height: 30em;
 
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 
-    flex-direction: column;
+     flex-direction: column;
 
-    color: white;
-    text-align: center;
+     color: white;
+     text-align: center;
 
 
 
-}
+ }
 
-.master-mind-box {
-    width: 60em;
-    height: 20em;
+ .master-mind-box {
+     width: 60em;
+     height: 20em;
 
 
-}
+ }
 
-#title-index {
-    font-size: 7em;
-    font-family: 'Monoton', cursive;
-    margin-bottom: 0;
-    padding-bottom: 5px;
-}
+ #title-index {
+     font-size: 7em;
+     font-family: 'Monoton', cursive;
+     margin-bottom: 0;
+     padding-bottom: 5px;
+ }
 
-#title-index:hover {
+ #title-index:hover {
 
-    text-shadow: #FC0 1px 0 10px;
-}
+     text-shadow: #FC0 1px 0 10px;
+ }
 
-#made-for {
-    font-size: 1em;
-    font-family: 'Monoton', cursive;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    letter-spacing: 5px;
+ #made-for {
+     font-size: 1em;
+     font-family: 'Monoton', cursive;
+     display: flex;
+     justify-content: flex-end;
+     align-items: flex-start;
+     letter-spacing: 5px;
 
-    margin-top: 0;
-}
+     margin-top: 0;
+ }
 
-.index-buttoms {
-    width: 45em;
+ .index-buttoms {
+     width: 45em;
+     height: 10em;
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     flex-direction: row;
+
+ }
+
+ #play {
+     height: 1.5em;
+     width: 5em;
+     border: 0.2em double white;
+     color: white;
+     font-size: 4em;
+     font-family: 'Monoton', cursive;
+     background-image: url(../img/Wood-Texture.jpg);
+     box-shadow: 5px 5px 41px 0px rgba(255, 255, 255, 0.64)
+ }
+
+ #play:hover {
+     text-shadow: #FC0 1px 0 10px;
+     box-shadow: #FC0 1px 0 10px;
+     border: 0.2em double #FC0;
+     cursor: pointer;
+ }
+
+ #play:active {
+     transform: translate(4px, 4px);
+     box-shadow: none;
+ }
+
+ #rules {
+     height: 1.5em;
+     width: 5em;
+     border: 0.2em double white;
+     color: white;
+     font-size: 4em;
+     font-family: 'Monoton', cursive;
+     background-image: url(../img/Wood-Texture.jpg);
+     box-shadow: 5px 5px 41px 0px rgba(255, 255, 255, 0.64);
+ }
+
+ a {
+     text-decoration: none;
+
+ }
+
+ #rules:hover {
+     text-shadow: #FC0 1px 0 10px;
+     box-shadow: #FC0 1px 0 10px;
+     border: 0.2em double #FC0;
+     cursor: pointer;
+ }
+
+ #rules:active {
+
+     transform: translate(4px, 4px);
+     box-shadow: none;
+ }
+
+ /* level board */
+
+ #containLevelBody {
+     overflow: hidden;
+     height: 40em;
+     width: 40em;
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+
+     margin: 0;
+     padding: 0;
+ }
+
+ .level-board {
+     height: 35em;
+     width: 40em;
+
+     background-image: url(../img/wood-board.png);
+     background-size: contain;
+     background-repeat: no-repeat;
+     margin: 0;
+     padding: 0;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-position: center;
+
+     flex-direction: column;
+     gap: 3.5em;
+
+     position: relative;
+
+
+ }
+
+
+ .levels {
+     width: 5em;
+     height: 1em;
+     position: relative;
+     top: -10px;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     font-family: 'Monoton', cursive;
+     font-size: 5em;
+     color: black;
+ }
+
+ /* poner los @media */
+
+ .levels:hover {
+     text-shadow: #FC0 1px 0 10px;
+     cursor: pointer;
+     transform: translate(4px, 4px);
+ }
+
+ .levels:active {
+     transform: translate(8px, 8px);
+ }
+
+ .buttom-back-home {
+     height: 2em;
+     width: 2em;
+     border: 0.1em double rgb(255, 245, 245);
+     position: relative;
+     top: 12em;
+     left: -8em;
+     background-color: rgb(165, 98, 55);
+     font-family: 'Monoton', cursive;
+     font-size: 2.5em;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     display: flex;
+
+ }
+
+ .text-color-black {
+     color: black;
+ }
+
+ .text-color-white {
+     color: rgb(255, 255, 255);
+ }
+
+
+
+ .buttom-back-home:active {
+     transform: translate(4px, 4px);
+     box-shadow: none;
+
+ }
+
+
+ .material-symbols-outlined {
+
+     font-size: 25px;
+     margin: 0;
+     padding: 0;
+     top: 2em;
+     right: 10em;
+
+     font-variation-settings:
+         'FILL' 0,
+         'wght' 400,
+         'GRAD' 0,
+         'opsz' 24;
+
+ }
+
+
+ /* Rules  */
+
+ .title-rules {
+     font-size: 4em;
+     font-family: 'Monoton', cursive;
+     margin-bottom: 0;
+     padding-bottom: 5px;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+ .title-by {
+     font-size: 1em;
+     font-family: 'Monoton', cursive;
+     margin-bottom: 0;
+     padding-bottom: 5px;
+     text-align: end;
+
+ }
+
+
+
+ #rulesContainer {
+
+     height: 15em;
+     width: 15em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .master-mind-rules-box {
+     width: 30em;
+     color: white;
+ }
+
+ .rules-box {
+     border: 0.1;
+     height: 29em;
+     width: 38em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 0;
+ }
+
+ .rules-board {
+     width: 37em;
+     height: 37em;
+
+     background-image: url(../img/rules-wood-board.png);
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .rules-text {
+     margin-left: 10px;
+     padding-left: 10px;
+     color: rgb(255, 255, 255);
+     width: 32em;
+     height: 22em;
+     font-size: 13px;
+     font-family: 'Martian Mono', monospace;
+     position: relative;
+     top: -43px;
+ }
+
+ .game-rules {
+     display: flex;
+     justify-content: center;
+ }
+
+ /* buttom rules */
+
+ .rules-buttoms {
+     width: 100vw;
+     height: 10em;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+     gap: 10em;
+     text-align: center;
+ }
+
+ .play-rules {
+     height: 1.5em;
+     width: 4em;
+
+     border: 0.2em double white;
+     color: white;
+     font-size: 2em;
+     font-family: 'Monoton', cursive;
+     background-image: url(../img/Wood-Texture.jpg);
+     box-shadow: 5px 5px 41px 0px rgba(255, 255, 255, 0.64)
+ }
+
+ .home-rules {
+     height: 1.5em;
+     width: 4em;
+
+     border: 0.2em double white;
+     color: white;
+     font-size: 2em;
+     font-family: 'Monoton', cursive;
+     background-image: url(../img/Wood-Texture.jpg);
+     box-shadow: 5px 5px 41px 0px rgba(255, 255, 255, 0.64)
+ }
+
+ .play-rules:hover {
+     text-shadow: #FC0 1px 0 10px;
+     box-shadow: #FC0 1px 0 10px;
+     border: 0.2em double #FC0;
+     cursor: pointer;
+ }
+
+ .home-rules:hover {
+     text-shadow: #FC0 1px 0 10px;
+     box-shadow: #FC0 1px 0 10px;
+     border: 0.2em double #FC0;
+     cursor: pointer;
+ }
+
+ .play-rules:active {
+     transform: translate(4px, 4px);
+     box-shadow: none;
+ }
+
+ .home-rules:active {
+     transform: translate(4px, 4px);
+     box-shadow: none;
+ }
+
+ /* User Name input */
+
+ .contain-user-input {
+     width: 100vw;
+     height: 25em;
+
+     display: flex;
+     justify-content: center;
+     align-self: center;
+
+     position: relative;
+ }
+
+ .input-box {
+     height: 18em;
+     width: 35em;
+     border: 0.6em solid rgb(156, 127, 80);
+     background-image: url(../img/wood-texture-2.avif);
+     border-radius: 15%;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     flex-direction: column;
+ }
+
+ .input-box-text {
+
+     height: 4em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .title-username {
+     font-size: 4em;
+     font-family: 'Monoton', cursive;
+     margin-bottom: 0;
+     padding-bottom: 0px;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+ }
+
+ .nickname {
+     color: white;
+     text-align: center;
+     height: 1.5em;
+     font-size: 3em;
+     padding-bottom: 0;
+     margin-bottom: 0;
+     font-family: 'Monoton', cursive;
+ }
+
+ .input {
+     margin-top: 0;
+     padding-top: 0;
+     background-color: rgb(156, 127, 80);
+     width: 6em;
+     font-size: 4em;
+     border-radius: 56px 56px 56px 56px;
+     padding-left: 15px;
+     text-align: center;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+ }
+
+
+
+ .buttom-back-home-username {
+     height: 2em;
+     width: 3em;
+     border: 0.2em solid rgb(156, 127, 80);
+     position: absolute;
+     top: 270px;
+     background-image: url(../img/Wood-Texture.jpg);
+     font-family: 'Monoton', cursive;
+     font-size: 2.1em;
+     border-radius: 30%;
+     padding-left: 20px;
+     padding-right: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .play-buttom {
+     color: white;
+ }
+
+
+
+ .buttom-back-home-username:hover {
+     text-shadow: #FC0 1px 0 10px;
+     box-shadow: #FC0 1px 0 10px;
+     border: 0.2em double #FC0;
+     cursor: pointer;
+ }
+
+ .buttom-back-home-username:active {
+     transform: translate(4px, 4px);
+     box-shadow: none;
+ }
+
+ /* Esto es el tablero */
+
+ #containboardBody {
+     height: 40em;
+     width: 50em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     margin: 0;
+     padding: 0;
+     flex-direction: column;
+
+
+ }
+
+
+ .color-board {
+     border: 0.3em solid rgb(147, 99, 28);
+     height: 18em;
+     width: 45em;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     background-image: url(../img/wood-texture-2.avif);
+     border-radius: 56px 56px 56px 56px;
+     position: static;
+
+
+
+ }
+
+ .title-color {
+     height: 3em;
+     width: 26em;
+     border: 0.5em solid rgb(147, 99, 28);
+     border-radius: 56px 56px 56px 56px;
+     position: relative;
+     top: 2.5em;
+     background-color: rgb(251, 211, 151);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .title-color-text {
+     font-size: 1.5em;
+     font-family: 'Black Ops One', cursive;
+ }
+
+ .colors {
+     height: 7em;
+     width: 7em;
+     border: 0.5em solid rgb(147, 99, 28);
+     border-radius: 50%;
+     background-color: white;
+     cursor: pointer;
+ }
+
+ .box-next {
+     height: 4em;
+     width: 10em;
+     border: 0.5em solid rgb(147, 99, 28);
+     border-radius: 56px 56px 56px 56px;
+     position: relative;
+     top: -2.5em;
+     background-color: rgb(251, 211, 151);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+ }
+
+ .box-next:active {
+     transform: translate(4px, 4px);
+     box-shadow: none;
+ }
+
+ #collapseBox {
+     display: flex;
+     height: 0;
+     width: 30em;
+     background-color: rgb(181, 174, 164);
+
+     border-radius: 56px;
+     position: absolute;
+     top: 385px;
+
+     z-index: 100;
+     justify-content: space-evenly;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+     padding-left: 2em;
+
+     overflow: hidden;
+     transition-property: height, width;
+     transition-duration: 0.5s;
+     justify-content: space-evenly;
+
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+ }
+
+ #collapseBox.expanded {
+     height: 10em;
+     padding-top: 2em;
+     padding-bottom: 2em;
+     border: 0.5em solid rgb(147, 99, 28);
+     justify-content: space-evenly;
+
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     padding-top: 2em;
+     padding-left: 2em;
+     padding-right: -1em;
+ }
+
+
+ .choice-color {
+     height: 3em;
+     width: 3em;
+     border: 0.2em solid rgb(0, 0, 0);
+     border-radius: 50%;
+     cursor: pointer;
+ }
+
+ #c1 {
+     background-color: #FF0000;
+ }
+
+ #c2 {
+     background-color: #0000FF;
+ }
+
+ #c3 {
+     background-color: #00FF37;
+ }
+
+ #c4 {
+     background-color: #D400FF;
+ }
+
+ #c5 {
+     background-color: #00F7FF;
+ }
+
+ #c6 {
+     background-color: #FFFF00;
+ }
+
+ #c7 {
+     background-color: #000000;
+ }
+
+ #c8 {
+     background-color: #6600FF;
+ }
+
+ #c9 {
+     background-color: #5E5E5E;
+ }
+
+ #c10 {
+     background-color: #F875DD;
+ }
+
+ /*  */
+
+ .arrowback {
+     width: 6em;
+     height: 4em;
+     background-image: url(../img/arrow.png);
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+     position: relative;
+     top: -33em;
+     left: -21em;
+     rotate: 180deg;
+     cursor: pointer;
+ }
+
+ .arrowback:active {
+     transform: translate(-4px, -4px);
+     box-shadow: #FC0 1px 0 10px;
+     box-shadow: none;
+ }
+
+ /* Esto es el mastermind */
+ #mastermindBoard {
+     height: 42em;
+     width: 80em;
+     border: 0.5em inset rgb(255, 150, 75);
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     grid-template-columns: 4fr 1fr 1.2fr 2.5fr;
+     background-image: url(../img/wood-texture-2.avif);
+     padding-right: 10px;
+     padding-left: 10px;
+     border-radius: 26px 26px 26px 26px;
+
+ }
+
+ .column-box {
+
+     width: 4fr 1.5fr 1.2fr 2fr;
+     height: 37em;
+     margin-bottom: 2em;
+     margin-top: 1em;
+ }
+
+ .column-mid-box {
+     height: 3em;
+     width: auto;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     margin-bottom: 12px;
+ }
+
+ .validation-box {
+     height: 3.5em;
+     width: 20px 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .square-validation {
+     height: 3em;
+     width: 3em;
+     border: 0.05em solid rgb(0, 0, 0);
+     background-color: rgb(245, 193, 131);
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     padding-top: 5px;
+     padding-left: 5px;
+     border-radius: 6px 6px 6px 6px;
+     box-shadow: 0px 0px 5px 2px black;
+ }
+
+ .circleCheck {
+     height: 1em;
+     width: 1em;
+     border: 0.1em solid black;
+     background-color: gray;
+     border-radius: 50%;
+     align-items: center;
+     box-shadow: 0px 0px 5px 1px black;
+ }
+
+
+
+ .colum-right-box {
+     width: 20em;
+     margin-top: 0px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     gap: 5px;
+ }
+
+ .circle-mastermind-game {
+     height: 3.3em;
+     width: 100%;
+     border: 0.1em solid rgb(0, 0, 0);
+     background-color: rgb(222, 160, 90);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 2em;
+     border-radius: 6px 6px 6px 6px;
+     margin-left: 30px;
+ }
+
+ .circleMastermind {
+     height: 2.5em;
+     width: 2.5em;
+     border: 0.2em solid black;
+     background-color: white;
+     border-radius: 50%;
+     box-shadow: 0px 0px 0px 3px rgb(222, 160, 90);
+ }
+
+ .number {
+     width: 1em;
+     height: 1em;
+     padding: 0;
+     margin: 0;
+     margin-right: -15px;
+     font-family: 'Dancing Script', cursive;
+     font-size: 2.2em;
+     text-align: start;
+     justify-content: flex-end;
+ }
+
+ .set-vertical-box {
+     background-color: gray;
+     width: 5.5em;
+     height: 30em;
+     margin-top: 3em;
+     margin-left: 1em;
+     border: 0.5em solid rgb(54, 54, 54);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+ .home-buttom-game {
+     height: 3em;
+     width: 3em;
+     border: 0.5em double black;
+     background-color: rgb(120, 81, 34);
+     border-radius: 50%;
+     position: relative;
+     z-index: 100;
+     top: -7em;
+     left: -20em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .home-buttom-game:active {
+     transform: translate(4px, 4px);
+     box-shadow: none;
+ }
+
+ .material-symbols-outlined {
+     font-size: 39px;
+     color: white;
+     font-variation-settings:
+         'FILL' 0,
+         'wght' 400,
+         'GRAD' 0,
+         'opsz' 24
+ }
+
+ .level-home-buttom {
+     top: -0.4em;
+     left: -0.4em;
+ }
+
+
+ #checkbuttom {
+     height: 2.5em;
+     width: 7em;
+     background-color: rgb(0, 207, 4);
+     border: 0.5em double green;
+     margin-bottom: 0;
+     position: relative;
+     top: 1em;
+     left: 0em;
+     border-radius: 25px 25px 25px 25px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-weight: 1000;
+     cursor: pointer;
+ }
+
+ #checkbuttom:hover {
+     text-shadow: #FC0 1px 0 10px;
+     box-shadow: #FC0 1px 0 10px;
+     border: 0.5em double #FC0;
+     cursor: pointer;
+ }
+
+ #checkbuttom:active {
+     transform: translate(4px, 4px);
+     box-shadow: none;
+ }
+
+ .selected-colors {
+     height: 4.5em;
+     width: 4.5em;
+     border: 0.2em solid black;
+     border-radius: 50%;
+     background-color: white;
+
+ }
+
+ .logo-mastermind {
+     background-image: url(../img/board-Mastermind-logo.png);
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+     height: 25em;
+     width: 35em;
+ }
+
+ .buttom-back-game {
+     background-image: url(../img/arrow.png);
+     height: 5em;
+     width: 8em;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+     position: relative;
+     rotate: 180deg;
+     top: -1em;
+     left: 1em;
+     cursor: pointer;
+ }
+
+ .ancor-size {
+     width: 4em;
+     height: 4em;
+ }
+
+
+ .buttom-back-game:active {
+     transform: translate(-4px, -4px);
+     box-shadow: #FC0 1px 0 10px;
+     box-shadow: none;
+ }
+
+ .rules-collapse {
+     position: relative;
+     top: 100px;
+     right: 130px;
+     z-index: 100;
+     cursor: pointer;
+ }
+
+ .rules-collapse:active {
+     transform: translate(4px, 4px);
+
+ }
+
+ .help-game {
+     background-color: rgb(129, 93, 39);
+     border-radius: 50%;
+     padding: 0;
+     margin: 0;
+ }
+
+ #collapseRules {
+     display: flex;
+     height: 0;
+     width: 30em;
+     background-color: rgb(181, 174, 164);
+
+     border-radius: 56px;
+     position: absolute;
+     top: 6.5em;
+     left: 10.5em;
+     z-index: 100;
+
+     overflow: hidden;
+     transition-property: height, width;
+     transition-duration: 0.5s;
+     text-align: start;
+     align-items: flex-start;
+ }
+
+ #collapseRules.expanded {
+     height: 21em;
+     border: 0.2em solid rgb(0, 0, 0);
+     align-items: flex-start;
+     justify-content: flex-start;
+     padding: 0;
+ }
+
+ .rules-text-game {
+     margin-left: 10px;
+     padding-left: 10px;
+     color: rgb(0, 0, 0);
+     width: 32em;
+     height: 22em;
+     font-size: 13px;
+     font-family: 'Martian Mono', monospace;
+     position: absolute;
+ }
+
+ .play-again {
+     height: 2em;
+     border: 0.2em solid rgb(156, 127, 80);
+     top: 270px;
+     background-image: url(../img/Wood-Texture.jpg);
+     font-family: 'Monoton', cursive;
+     font-size: 2.1em;
+     border-radius: 30%;
+     padding-left: 20px;
+     padding-right: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     position: absolute;
+     top: 8em;
+     z-index: 100;
+
+ }
+
+ .play-again-text {
+     color: white;
+
+ }
+
+ .you-lose {
+     color: rgb(255, 0, 0);
+     text-align: center;
+     height: 1.5em;
+     font-size: 6em;
+     padding-bottom: 0;
+     margin-bottom: 0;
+     font-family: 'Monoton', cursive;
+     text-shadow: 5px 2px 2px #000000;
+ }
+
+ .you-win {
+     color: rgb(55, 157, 0);
+     text-align: center;
+     height: 1.5em;
+     font-size: 5em;
+     padding-top: 0;
+     padding-bottom: 0;
+     margin-bottom: 0;
+     margin-top: 0;
+     font-family: 'Monoton', cursive;
+     text-shadow: 5px 2px 2px #000000;
+ }
+
+
+ #usernameWin {
+     font-family: 'Martian Mono', monospace;
+     font-size: 3em;
+     color: #000000;
+     margin: 0;
+     padding: 0;
+     top: -20px;
+
+ }
+
+
+ .coming-soon-mid{
+    width: 18em;
     height: 10em;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-
-}
-
-#play {
-    height: 1.5em;
-    width: 5em;
-    border: 0.2em double white;
-    color: white;
-    font-size: 4em;
-    font-family: 'Monoton', cursive;
-    background-image: url(../img/Wood-Texture.jpg);
-    box-shadow: 5px 5px 41px 0px rgba(255, 255, 255, 0.64)
-}
-
-#play:hover {
-    text-shadow: #FC0 1px 0 10px;
-    box-shadow: #FC0 1px 0 10px;
-    border: 0.2em double #FC0;
-    cursor: pointer;
-}
-
-#play:active {
-    transform: translate(4px, 4px);
-    box-shadow: none;
-}
-
-#rules {
-    height: 1.5em;
-    width: 5em;
-    border: 0.2em double white;
-    color: white;
-    font-size: 4em;
-    font-family: 'Monoton', cursive;
-    background-image: url(../img/Wood-Texture.jpg);
-    box-shadow: 5px 5px 41px 0px rgba(255, 255, 255, 0.64);
-}
-
-a {
-    text-decoration: none;
-
-}
-
-#rules:hover {
-    text-shadow: #FC0 1px 0 10px;
-    box-shadow: #FC0 1px 0 10px;
-    border: 0.2em double #FC0;
-    cursor: pointer;
-}
-
-#rules:active {
-
-    transform: translate(4px, 4px);
-    box-shadow: none;
-}
-
-/* level board */
-
-#containLevelBody {
-    overflow: hidden;
-    height: 40em;
-    width: 40em;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
-    margin: 0;
-    padding: 0;
-}
-
-.level-board {
-    height: 35em;
-    width: 40em;
-
-    background-image: url(../img/wood-board.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url(../img/coming-soon.png);
     background-position: center;
-
-    flex-direction: column;
-    gap: 3.5em;
-
-    position: relative;
-
-
-}
-
-
-.levels {
-    width: 5em;
-    height: 1em;
-    position: relative;
-    top: -10px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: 'Monoton', cursive;
-    font-size: 5em;
-    color: black;
-}
-
-/* poner los @media */
-
-.levels:hover {
-    text-shadow: #FC0 1px 0 10px;
-    cursor: pointer;
-    transform: translate(4px, 4px);
-}
-
-.levels:active {
-    transform: translate(8px, 8px);
-}
-
-.buttom-back-home {
-    height: 1.5em;
-    width: 1.5em;
-    border: 0.1em double rgb(255, 245, 245);
-    position: absolute;
-    top: 550px;
-    background-color: rgb(165, 98, 55);
-    font-family: 'Monoton', cursive;
-    font-size: 2.5em;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-}
-
-.text-color-black {
-    color: black;
-}
-
-.text-color-white {
-    color: rgb(255, 255, 255);
-}
-
-
-
-.buttom-back-home:active {
-    transform: translate(4px, 4px);
-    box-shadow: none;
-}
-
-
-.material-symbols-outlined {
-    padding: 0.5em;
-    font-size: 50px;
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
-}
-
-
-/* Rules  */
-
-.title-rules {
-    font-size: 4em;
-    font-family: 'Monoton', cursive;
-    margin-bottom: 0;
-    padding-bottom: 5px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.title-by {
-    font-size: 1em;
-    font-family: 'Monoton', cursive;
-    margin-bottom: 0;
-    padding-bottom: 5px;
-    text-align: end;
-
-}
-
-
-
-#rulesContainer {
-
-    height: 15em;
-    width: 15em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.master-mind-rules-box {
-    width: 30em;
-    color: white;
-}
-
-.rules-box {
-    border: 0.1;
-    height: 29em;
-    width: 38em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
-
-.rules-board {
-    width: 37em;
-    height: 37em;
-
-    background-image: url(../img/rules-wood-board.png);
-    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.rules-text {
-    margin-left: 10px;
-    padding-left: 10px;
-    color: rgb(255, 255, 255);
-    width: 32em;
-    height: 22em;
-    font-size: 13px;
-    font-family: 'Martian Mono', monospace;
-    position: absolute;
-    top: 15em;
-}
-
-.game-rules {
-    display: flex;
-    justify-content: center;
-}
-
-/* buttom rules */
-
-.rules-buttoms {
-    width: 100vw;
-    height: 10em;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 10em;
-    text-align: center;
-}
-
-.play-rules {
-    height: 1.5em;
-    width: 4em;
-
-    border: 0.2em double white;
-    color: white;
-    font-size: 2em;
-    font-family: 'Monoton', cursive;
-    background-image: url(../img/Wood-Texture.jpg);
-    box-shadow: 5px 5px 41px 0px rgba(255, 255, 255, 0.64)
-}
-
-.home-rules {
-    height: 1.5em;
-    width: 4em;
-
-    border: 0.2em double white;
-    color: white;
-    font-size: 2em;
-    font-family: 'Monoton', cursive;
-    background-image: url(../img/Wood-Texture.jpg);
-    box-shadow: 5px 5px 41px 0px rgba(255, 255, 255, 0.64)
-}
-
-.play-rules:hover {
-    text-shadow: #FC0 1px 0 10px;
-    box-shadow: #FC0 1px 0 10px;
-    border: 0.2em double #FC0;
-    cursor: pointer;
-}
-
-.home-rules:hover {
-    text-shadow: #FC0 1px 0 10px;
-    box-shadow: #FC0 1px 0 10px;
-    border: 0.2em double #FC0;
-    cursor: pointer;
-}
-
-.play-rules:active {
-    transform: translate(4px, 4px);
-    box-shadow: none;
-}
-
-.home-rules:active {
-    transform: translate(4px, 4px);
-    box-shadow: none;
-}
-
-/* User Name input */
-
-.contain-user-input {
-    width: 100vw;
-    height: 25em;
-
-    display: flex;
-    justify-content: center;
-    align-self: center;
-
-    position: relative;
-}
-
-.input-box {
-    height: 18em;
-    width: 35em;
-    border: 0.6em solid rgb(156, 127, 80);
-    background-image: url(../img/wood-texture-2.avif);
-    border-radius: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-.input-box-text {
-
-    height: 4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.title-username {
-    font-size: 4em;
-    font-family: 'Monoton', cursive;
-    margin-bottom: 0;
-    padding-bottom: 0px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.nickname {
-    color: white;
-    text-align: center;
-    height: 1.5em;
-    font-size: 3em;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-family: 'Monoton', cursive;
-}
-
-.input {
-    margin-top: 0;
-    padding-top: 0;
-    background-color: rgb(156, 127, 80);
-    width: 6em;
-    font-size: 4em;
-    border-radius: 56px 56px 56px 56px;
-    padding-left: 15px;
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-
-
-.buttom-back-home-username {
-    height: 2em;
-    width: 3em;
-    border: 0.2em solid rgb(156, 127, 80);
-    position: absolute;
-    top: 270px;
-    background-image: url(../img/Wood-Texture.jpg);
-    font-family: 'Monoton', cursive;
-    font-size: 2.1em;
-    border-radius: 30%;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.play-buttom {
-    color: white;
-}
-
-
-
-.buttom-back-home-username:hover {
-    text-shadow: #FC0 1px 0 10px;
-    box-shadow: #FC0 1px 0 10px;
-    border: 0.2em double #FC0;
-    cursor: pointer;
-}
-
-.buttom-back-home-username:active {
-    transform: translate(4px, 4px);
-    box-shadow: none;
-}
-
-/* Esto es el tablero */
-
-#containboardBody {
-    height: 40em;
-    width: 50em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-
-
-}
-
-
-.color-board {
-    border: 0.3em solid rgb(147, 99, 28);
-    height: 18em;
-    width: 45em;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-image: url(../img/wood-texture-2.avif);
-    border-radius: 56px 56px 56px 56px;
-    position: static;
-
-
-
-}
-
-.title-color {
-    height: 3em;
-    width: 26em;
-    border: 0.5em solid rgb(147, 99, 28);
-    border-radius: 56px 56px 56px 56px;
-    position: relative;
-    top: 2.5em;
-    background-color: rgb(251, 211, 151);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.title-color-text {
-    font-size: 1.5em;
-    font-family: 'Black Ops One', cursive;
-}
-
-.colors {
-    height: 7em;
-    width: 7em;
-    border: 0.5em solid rgb(147, 99, 28);
-    border-radius: 50%;
-    background-color: white;
-    cursor: pointer;
-}
-
-.box-next {
-    height: 4em;
-    width: 10em;
-    border: 0.5em solid rgb(147, 99, 28);
-    border-radius: 56px 56px 56px 56px;
-    position: relative;
-    top: -2.5em;
-    background-color: rgb(251, 211, 151);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.box-next:active {
-    transform: translate(4px, 4px);
-    box-shadow: none;
-}
-
-#collapseBox {
-    display: flex;
-    height: 0;
-    width: 30em;
-    background-color: rgb(181, 174, 164);
-
-    border-radius: 56px;
-    position: absolute;
-    top: 27em;
+    background-size: contain;
+    position:absolute;
     z-index: 100;
-    justify-content: space-evenly;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    top:60px;
+    left: 130px;
+ }
 
-    padding-left: 2em;
-
-    overflow: hidden;
-    transition-property: height, width;
-    transition-duration: 0.5s;
-    justify-content: space-evenly;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-#collapseBox.expanded {
+ .coming-soon-hard{
+    width: 18em;
     height: 10em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    border: 0.5em solid rgb(147, 99, 28);
-    justify-content: space-evenly;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding-top: 2em;
-    padding-left: 2em;
-    padding-right: -1em;
-}
-
-
-.choice-color {
-    height: 3em;
-    width: 3em;
-    border: 0.2em solid rgb(0, 0, 0);
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-#c1 {
-    background-color: #FF0000;
-}
-
-#c2 {
-    background-color: #0000FF;
-}
-
-#c3 {
-    background-color: #00FF37;
-}
-
-#c4 {
-    background-color: #D400FF;
-}
-
-#c5 {
-    background-color: #00F7FF;
-}
-
-#c6 {
-    background-color: #FFFF00;
-}
-
-#c7 {
-    background-color: #000000;
-}
-
-#c8 {
-    background-color: #6600FF;
-}
-
-#c9 {
-    background-color: #5E5E5E;
-}
-
-#c10 {
-    background-color: #F875DD;
-}
-
-/*  */
-
-.arrowback {
-    width: 6em;
-    height: 4em;
-    background-image: url(../img/arrow.png);
+    background-image: url(../img/coming-soon.png);
     background-position: center;
-    background-size: contain;
     background-repeat: no-repeat;
-    position: relative;
-    top: -33em;
-    left: -21em;
-    rotate: 180deg;
-    cursor: pointer;
-}
-
-.arrowback:active {
-    transform: translate(-4px, -4px);
-    box-shadow: #FC0 1px 0 10px;
-    box-shadow: none;
-}
-
-/* Esto es el mastermind */
-#mastermindBoard {
-    height: 42em;
-    width: 80em;
-    border: 0.5em inset rgb(255, 150, 75);
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 4fr 1fr 1.2fr 2.5fr;
-    margin-top: 3em;
-    background-image: url(../img/wood-texture-2.avif);
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 26px 26px 26px 26px;
-
-}
-
-.column-box {
-
-    width: 4fr 1.5fr 1.2fr 2fr;
-    height: 37em;
-    margin-bottom: 2em;
-    margin-top: 1em;
-}
-
-.column-mid-box {
-    height: 3em;
-    width: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 12px;
-}
-
-.validation-box {
-    height: 3.5em;
-    width: 20px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.square-validation {
-    height: 3em;
-    width: 3em;
-    border: 0.05em solid rgb(0, 0, 0);
-    background-color: rgb(245, 193, 131);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding-top: 5px;
-    padding-left: 5px;
-    border-radius: 6px 6px 6px 6px;
-    box-shadow: 0px 0px 5px 2px black;
-}
-
-.circleCheck {
-    height: 1em;
-    width: 1em;
-    border: 0.1em solid black;
-    background-color: gray;
-    border-radius: 50%;
-    align-items: center;
-    box-shadow: 0px 0px 5px 1px black;
-}
-
-
-
-.colum-right-box {
-    width: 20em;
-    margin-top: 0px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.circle-mastermind-game {
-    height: 3.3em;
-    width: 100%;
-    border: 0.1em solid rgb(0, 0, 0);
-    background-color: rgb(222, 160, 90);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-    border-radius: 6px 6px 6px 6px;
-    margin-left: 30px;
-}
-
-.circleMastermind {
-    height: 2.5em;
-    width: 2.5em;
-    border: 0.2em solid black;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 3px rgb(222, 160, 90);
-}
-
-.number {
-    width: 1em;
-    height: 1em;
-    padding: 0;
-    margin: 0;
-    margin-right: -15px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.2em;
-    text-align: start;
-    justify-content: flex-end;
-}
-
-.set-vertical-box {
-    background-color: gray;
-    width: 5.5em;
-    height: 30em;
-    margin-top: 3em;
-    margin-left: 1em;
-    border: 0.5em solid rgb(54, 54, 54);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.home-buttom-game {
-    height: 4em;
-    width: 4em;
-    border: 0.5em double black;
-    background-color: rgb(120, 81, 34);
-    border-radius: 50%;
-    position: relative;
+    background-size: contain;
+    position:absolute;
     z-index: 100;
-    top: -7em;
-    left: -20em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.home-buttom-game:active {
-    transform: translate(4px, 4px);
-    box-shadow: none;
-}
-
-.material-symbols-outlined {
-    position: absolute;
-    color: white;
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
-}
-
-.level-home-buttom {
-    top: -0.4em;
-    left: -0.4em;
-}
-
-
-#checkbuttom {
-    height: 2.5em;
-    width: 7em;
-    background-color: rgb(0, 207, 4);
-    border: 0.5em double green;
-    margin-bottom: 0;
-    position: relative;
-    top: 1em;
-    left: 0em;
-    border-radius: 25px 25px 25px 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 1000;
-    cursor: pointer;
-}
-
-#checkbuttom:hover {
-    text-shadow: #FC0 1px 0 10px;
-    box-shadow: #FC0 1px 0 10px;
-    border: 0.5em double #FC0;
-    cursor: pointer;
-}
-
-#checkbuttom:active {
-    transform: translate(4px, 4px);
-    box-shadow: none;
-}
-
-.selected-colors {
-    height: 4.5em;
-    width: 4.5em;
-    border: 0.2em solid black;
-    border-radius: 50%;
-    background-color: white;
-
-}
-
-.logo-mastermind {
-    background-image: url(../img/board-Mastermind-logo.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 25em;
-    width: 35em;
-}
-
-.buttom-back-game {
-    background-image: url(../img/arrow.png);
-    height: 5em;
-    width: 8em;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-    rotate: 180deg;
-    top: -1em;
-    left: 1em;
-    cursor: pointer;
-}
-
-.ancor-size {
-    width: 4em;
-    height: 4em;
-}
-
-
-.buttom-back-game:active {
-    transform: translate(-4px, -4px);
-    box-shadow: #FC0 1px 0 10px;
-    box-shadow: none;
-}
-
-.rules-collapse {
-    position: relative;
-    top: 4.5em;
-    left: -9em;
-
-    cursor: pointer;
-
-}
-
-.rules-collapse:active {
-    transform: translate(4px, 4px);
-
-}
-
-.help-game {
-    background-color: rgb(129, 93, 39);
-    border-radius: 50%;
-    padding: 0;
-    margin: 0;
-}
-
-/* #collapseRules{
-    display: flex;
-    height: 0;
-    width: 10em;
-
-
-}
-
-#collapseRules.expanded{
-    height: 10em;
-    width: 10em;
-    background-color: gray;
-    border: 0.2em solid black;
-
-} */
-
-
-#collapseRules {
-    display: flex;
-    height: 0;
-    width: 30em;
-    background-color: rgb(181, 174, 164);
-
-    border-radius: 56px;
-    position: absolute;
-    top: 6.5em;
-    left: 10.5em;
-    z-index: 100;
-
-    overflow: hidden;
-    transition-property: height, width;
-    transition-duration: 0.5s;
-    text-align: start;
-    align-items: flex-start;
-}
-
-#collapseRules.expanded {
-    height: 21em;
-    border: 0.2em solid rgb(0, 0, 0);
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0;
-}
-
-.rules-text-game {
-    margin-left: 10px;
-    padding-left: 10px;
-    color: rgb(0, 0, 0);
-    width: 32em;
-    height: 22em;
-    font-size: 13px;
-    font-family: 'Martian Mono', monospace;
-    position: absolute;
-}
-
-.play-again {
-    height: 2em; 
-    border: 0.2em solid rgb(156, 127, 80);
-    position: absolute;
-    top: 270px;
-    background-image: url(../img/Wood-Texture.jpg);
-    font-family: 'Monoton', cursive;
-    font-size: 2.1em;
-    border-radius: 30%;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white; 
-
-}
-
-.play-again-text{
-    color: white;
-}
-
-.you-lose {
-    color: rgb(255, 0, 0);
-    text-align: center;
-    height: 1.5em;
-    font-size: 6em;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-family: 'Monoton', cursive;
-    text-shadow: 5px 2px 2px #000000;
-}
-
-.you-win {
-    color: rgb(55, 157, 0);
-    text-align: center;
-    height: 1.5em;
-    font-size: 6em;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-family: 'Monoton', cursive;
-    text-shadow: 5px 2px 2px #000000;
-}
+    top:200px;
+    left: 130px;
+ }
