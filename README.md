@@ -90,7 +90,7 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para obt
 
 Este proyecto ha sido posible gracias al arduo trabajo de mis profesores Daniel Tarazona y David Ochando, quienes no solo comparten sus conocimientos, sino que también nos inculcan y generan entusiasmo en lo que estamos desarrollando.
 
-También quiero agradecer a mis compañeros de bootcamp, ya que sin ellos y las lluvias de ideas diarias han ayudado a mejorar muchos aspectos de este proyecto.
+También quiero agradecer a mis compañeros de bootcamp, ya que sin ellos y las lluvias de ideas diarias han ayudado a mejorar muchos aspectos de este proyecto.Como agradecimiento especial a mi compañero de Bootcamp Andrés Labat. Gracias por tu invaluable apoyo y dedicación en este proyecto. Tu ayuda ha hecho una diferencia significativa y estoy realmente agradecido por ello. ¡Trabajar contigo ha sido un placer!"
 
  
 
