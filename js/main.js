@@ -144,8 +144,7 @@ selected3.addEventListener('click', () => {
 selected4.addEventListener('click', () => {
     lastSelectedColor = getComputedStyle(selected4).backgroundColor;
     applyColorToDestinyElements();
-});
-
+}); 
 
 // funcioneas para aplicar el color al row  del juego 
 function applyColorToElement(element, color) {
@@ -153,23 +152,20 @@ function applyColorToElement(element, color) {
 }
 let arrayRow = [];
 
-function applyColorToDestinyElements(row) {
-    // let lastSelectedColors = '';
+function applyColorToDestinyElements(row) { 
     const DestinyColor = document.querySelectorAll(row);
     DestinyColor.forEach((row) => {
         row.addEventListener('click', () => {
             if (lastSelectedColor) {
                 const computedStyle = window.getComputedStyle(row);
                 applyColorToElement(row, lastSelectedColor);
-                const backgroundColor = computedStyle.backgroundColor;
-                arrayRow.push(backgroundColor);
-                localStorage.setItem('arrayRow', arrayRow)
+                const backgroundColor = computedStyle.backgroundColor; 
             }
         });
     });
 }
 
-const anularEventos = (circle1, circle2, circle3, circle4) => {
+const stopEvents = (circle1, circle2, circle3, circle4) => {
     circle1.style.pointerEvents = "none";
     circle2.style.pointerEvents = "none";
     circle3.style.pointerEvents = "none";
@@ -237,7 +233,7 @@ checkButtom.addEventListener('click', () => {
             }
             applyColorToDestinyElements('.row2');
             checkIterador++;
-            anularEventos(row1col1, row1col2, row1col3, row1col4)
+            stopEvents(row1col1, row1col2, row1col3, row1col4)
         }
     } else if (checkIterador === 2) {
         if (findWhite(row2col1, row2col2, row2col3, row2col4) === true) {
@@ -279,7 +275,7 @@ checkButtom.addEventListener('click', () => {
             }
             applyColorToDestinyElements('.row3');
             checkIterador++;
-            anularEventos(row2col1, row2col2, row2col3, row2col4)
+            stopEvents(row2col1, row2col2, row2col3, row2col4)
         }
     } else if (checkIterador == 3) {
         if (findWhite(row3col1, row3col2, row3col3, row3col4) === true) {
@@ -321,7 +317,7 @@ checkButtom.addEventListener('click', () => {
             }
             applyColorToDestinyElements('.row4');
             checkIterador++;
-            anularEventos(row3col1, row3col2, row3col3, row3col4)
+            stopEvents(row3col1, row3col2, row3col3, row3col4)
         }
     } else if (checkIterador === 4) {
         if (findWhite(row4col1, row4col2, row4col3, row4col4) === true) {
@@ -363,7 +359,7 @@ checkButtom.addEventListener('click', () => {
             }
             applyColorToDestinyElements('.row5');
             checkIterador++;
-            anularEventos(row4col1, row4col2, row4col3, row4col4)
+            stopEvents(row4col1, row4col2, row4col3, row4col4)
         }
     } else if (checkIterador === 5) {
         if (findWhite(row5col1, row5col2, row5col3, row5col4) === true) {
@@ -405,7 +401,7 @@ checkButtom.addEventListener('click', () => {
             }
             applyColorToDestinyElements('.row6');
             checkIterador++;
-            anularEventos(row5col1, row5col2, row5col3, row5col4)
+            stopEvents(row5col1, row5col2, row5col3, row5col4)
         }
     } else if (checkIterador === 6) {
         if (findWhite(row6col1, row6col2, row6col3, row6col4) === true) {
@@ -452,7 +448,7 @@ checkButtom.addEventListener('click', () => {
             applyColorToDestinyElements('.row7');
 
             checkIterador++;
-            anularEventos(row5col1, row5col2, row5col3, row5col4)
+            stopEvents(row5col1, row5col2, row5col3, row5col4)
         }
     } else if (checkIterador === 7) {
         if (findWhite(row7col1, row7col2, row7col3, row7col4) === true) {
@@ -494,7 +490,7 @@ checkButtom.addEventListener('click', () => {
             }
             applyColorToDestinyElements('.row8');
             checkIterador++;
-            anularEventos(row5col1, row5col2, row5col3, row5col4)
+            stopEvents(row5col1, row5col2, row5col3, row5col4)
         }
     } else if (checkIterador === 8) {
         if (findWhite(row8col1, row8col2, row8col3, row8col4) === true) {
@@ -536,7 +532,7 @@ checkButtom.addEventListener('click', () => {
             }
             applyColorToDestinyElements('.row9');
             checkIterador++;
-            anularEventos(row5col1, row5col2, row5col3, row5col4)
+            stopEvents(row5col1, row5col2, row5col3, row5col4)
         }
     } else if (checkIterador === 9) {
         if (findWhite(row9col1, row9col2, row9col3, row9col4) === true) {
@@ -578,7 +574,7 @@ checkButtom.addEventListener('click', () => {
             }
             applyColorToDestinyElements('.row10');
             checkIterador++;
-            anularEventos(row9col1, row9col2, row9col3, row9col4)
+            stopEvents(row9col1, row9col2, row9col3, row9col4)
         }
     } else if (checkIterador === 10) {
         if (findWhite(row10col1, row10col2, row10col3, row10col4) === true) {
@@ -622,5 +618,4 @@ checkButtom.addEventListener('click', () => {
             }
         }
     }
-}
-);
+});
